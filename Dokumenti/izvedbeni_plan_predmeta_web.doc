@@ -1,0 +1,297 @@
+
+<html
+    xmlns:o='urn:schemas-microsoft-com:office:office'
+    xmlns:w='urn:schemas-microsoft-com:office:word'
+    xmlns='http://www.w3.org/TR/REC-html40'>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<title>:: Izvedbeni plan ::</title>
+
+<style type="text/css">
+
+body
+{
+    margin: 3px;
+    font-family: Arial;
+    font-size: 10pt;
+}
+
+td
+{
+    font-size: 10pt;  
+}
+
+h2
+{
+	font-size: 12pt;
+}
+
+h3
+{
+	font-size: 10pt;
+}
+
+@page Section1{
+    size: 21cm 29.7cm;
+    margin: 2.5cm 2cm 2cm 2.5cm;
+    mso-footer:f1;
+}
+
+div.Section1 { page:Section1;}
+
+</style>
+
+</head><body>
+<div class="Section1">
+<table border="0" cellpadding="2" style="border-collapse: collapse;" bordercolor="#000000" width="100%">
+    <tr>
+        <td width="100%" height="70" align="center" style="border-bottom: 1px solid #000000">
+            <img src="http://pretinac.vvg.hr/img/vvg-logo-hr-eng.jpg" width="400" height="80" />
+        </td>
+    </tr>
+</table><br /><br />
+<p>
+	<b>STUDIJ: Održavanje računalnih sustava (ORS), Redovni</b><br />
+</p>
+<p align="center" style="font-size: 12pt;">
+	<b>IZVEDBENI PLAN NASTAVE PREDMETA</b><br />
+</p>
+<table border="1" cellpadding="4" style="border-collapse: collapse;" bordercolor="#000000" width="100%">
+	<tr>
+		<td width="20%"><b>Predmet:</b></td>
+		<td widht="80%" colspan="5">Web aplikacije (2+1+0), ORS135, ECTS: 4</td>
+	</tr>
+
+
+<tr>
+		<td><b>Nositelj predmeta:</b></td>
+                        <td align="left" colspan="5">naslovni doc. dr. sc. Alen Šimec v. pred. dipl. ing.<br />
+                        </td>
+	</tr>
+	
+	<tr>
+		<td><b>Nastavnici i suradnici:</b></td>
+		<td align="left" colspan="5">
+                        </td>	</tr>
+	<tr>
+		<td><b>Semestar:</b> zimski</td>
+		<td>Sati pred.: 30</td>
+		<td>Sati vježbe: 15</td>
+		<td>Sati sem.: 0</td>
+		<td>Ukupno: 45</td>
+		<td>ECTS bodovi: 4</td>
+	</tr>		
+</table>
+<p>
+	<b>Vrijedi od 01.10.2022. za akademsku godinu 2022/2023</b><br />
+</p>
+<h2>1. Cilj predmeta:</h2>
+<p>
+	Osposobiti studente za samostalnu instalaciju, konfiguriranje i održavanje web servera, upoznavanje arhitekture i organizacije web sitea, pregled FTP servisa, World Wide Web servisa, kao i za rješavanje tipičnih problema.<br />
+</p>
+<h2>2. Preduvjeti:</h2>
+<p>
+	<br />
+</p>
+<h2>3. Plan realizacije predmeta, sadržaj predavanja, vježbi i seminara:</h2>
+    <h3>Nastavnik naslovni doc. dr. sc. Alen Šimec v. pred. dipl. ing.:</h3> 
+    <p>
+        <table border="1" cellpadding="3" style="border-collapse: collapse;" bordercolor="#000000" width="100%">
+          <tr>
+            <td width="5%" height="20" align="center"><b>Rbr.</b></td>
+            <td width="45%" height="20" align="center"><b>Sadržaj</b></td>
+            <td width="10%" height="20" align="center"><b>Pred.</b></td>
+            <td width="10%" height="20" align="center"><b>Vj.</b></td>
+            <td width="10%" height="20" align="center"><b>Sem.</b></td>
+            
+          </tr>
+				<tr>
+					<td align="center">1.</td>
+					<td><b>Uvodno predavanje</b><ul><li>upoznavanje sa studentima i radnom okolinom</li><li>upoznavanje sa nastavnim cjelinama</li><li>kolokvij i ispitni rokovi</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">1</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">2.</td>
+					<td><b>Arhitektura računala</b><ul><li>Razvoj Internet platforme</li><li>Software i hardware, te rad u digitalnom okruženju</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">1</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">3.</td>
+					<td><b>Arhitektura računala</b><ul><li>Arhitektura i publiciranje dokumenata</li><li>HTTP request i HTTP response</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">1</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">4.</td>
+					<td><b>Arhitektura računala</b><ul><li>OSI-model za otvoreno povezivanje sustava i slojevi OSI modela</li><li>Prikaz arhitekture kroz tri sloja: sučelje, sloj aplikacijsko programske podrške i baza podataka</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">1</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">5.</td>
+					<td><b>Upoznavanje sa HTML5 sintaksom i pisanje koda</b><ul><li>Sintaksa HTML 5 dokumenata</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">1</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">6.</td>
+					<td><b>Upoznavanje sa HTML5 sintaksom i pisanje koda</b><ul><li>Definiranje pojmova elemenata i atributa HTML 5 dokumenata</li><li>Stvaranje strukture dokumenata i načina pisanja koda</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">1</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">7.</td>
+					<td><b>Upoznavanje sa HTML5 sintaksom i pisanje koda</b><ul><li>Generiranje HTML formi, obrazaca za slanje podataka preko klijenta na server</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">1</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">8.</td>
+					<td><b>Kolokviji i ispiti</b><ul><li>Priprema za kolokvij u sustavu Gaudeamus</li><li>Pravila pisanja kolokvija, bodovanje i ocjenjivanje kolokvija</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">1</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">9.</td>
+					<td><b>Kolokviji i ispiti</b><ul><li>Pisanje kolokvija preko LMS sustava</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">1</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">10.</td>
+					<td><b>Upoznavanje sa HTML5 sintaksom i pisanje koda</b><ul><li>Rad sa jezikom za oblikovanje dokumenata</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">1</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">11.</td>
+					<td><b>Upoznavanje sa HTML5 sintaksom i pisanje koda</b><ul><li>Pisanje CSS koda i povezivanje sa HTML dokumentima</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">1</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">12.</td>
+					<td><b>Upoznavanje sa HTML5 sintaksom i pisanje koda</b><ul><li>Pisanje CSS koda i povezivanje sa HTML dokumentima</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">1</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">13.</td>
+					<td><b>Upoznavanje sa HTML5 sintaksom i pisanje koda</b><ul><li>Upotreba HTML predložaka gotovih skripti ili pisanje koda i formiranje samostalnih oblikovanja za projekt</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">1</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">14.</td>
+					<td><b>Projekti i seminarski radovi</b><ul><li>Prezentacija seminarskih radova i projekata studenata</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">1</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">15.</td>
+					<td><b>Projekti i seminarski radovi</b><ul><li>Ocjenjivanje radova studenata</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">1</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">16.</td>
+					<td><b>Kolokviji i ispiti</b><ul><li>Pisanje kolokvija preko LMS sustava</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">1</td>
+					<td align="center">0</td>
+					
+				</tr>
+		  <tr>
+		  	<td colspan="2" align="right"><b>UKUPNO</b></td>
+		  	<td align="center"><b>32</b></td>
+		  	<td align="center"><b>16</b></td>
+		  	<td align="center"><b>0</b></td>
+		  </tr>
+		</table>
+	<br />
+	</p>
+<h2>4. Obveze studenata i način polaganja ispita:</h2>
+<p>
+	Studenti su obavezni pohađati nastavu i napraviti sve zadatke kako bi mogli pristupiti ispitu. <br />
+Preduvjet za izlazak na ispit je izrada web aplikacije koja je bazira na zadacima koji se rješavaju tijekom semestra.<br />
+</p>
+<h2>5. Literatura:</h2>
+<p>
+	<b>Obvezna literatura:</b><br />
+	1. Šimec, Alen; Uvod u HTML, XHTML i CSS; Tehničko veleučilište u Zagrebu; 2011.<br />
+2. Šimec Alen; Programiranje i optimizacija Internet stranica u HTML5 okruženju; Tehničko veleučilište u Zagrebu; 2015.<br />
+3. Nixon, Robin; Learning PHP, MySQL, JavaScript, CSS & HTML5, 3rd Edition; O&#8217;Reilly Media; 2014.<br />
+4. Purewal, S. Learning Web App Development. O'Reilly Media, 2014.<br />
+5. Fielding, J. Beginning Responsive Web Design with HTML5 and CSS3. Apress, 2014. <br /><br />
+	
+	<b>Preporučena literatura:</b><br />
+	1. Firtman, M. Programming the Mobile Web, 2nd Edition. O'Reilly Media, 2013<br />
+2. Benmessaoud, N. Williams, C.J. Mahesh Mudigonda, U. Tulloch, M. Network Virtualization and Cloud Computing. Microsoft Press, 2014<br />
+3. Seyed M.M. &#8220;Saied&#8221; Tahaghoghi; Hugh E. Williams; Learning MySQL; O&#8217;Reilly Media; 2007<br />
+4. S. Sumathi, S. Esakkirajan; Fundamentals of Relational Database Management Systems; Springer; 2007<br />
+5. Skriptni jezik - PHP (www.php.net)<br />
+6. Baze podataka - MySQL (www.mysql.com)<br />
+7. W3C preporuke (www.w3c.org) <br />
+8. W3Schools Online Web Tutorials (www.w3schools.com) 
+</p>
+<h2>6. Metode izvedbe predmeta:</h2>
+<p>
+	Diskusije sa studentima, praćenje nazočnosti, blic testovi (5-minutni) na računalu korištenjem LMS sustava gaudeamus.vvg.hr. <br />
+Stručne rasprave iz predavanja i vježbi kroz forum, kreiranje zadataka i rješenja, pojmova u sustavu vezano za nastavu ili seminarski rad, projektni zadatak na odabranu temu, prezentacije i diskusije. Izvješće o izvedenoj vježbi, provjera i analiza rezultata vježbi. Parcijalni testovi (kolokviji), blic testovi, završni ispit.<br />
+</p>
+<h2>7. Komunikacija sa studentima:</h2>
+<p>
+	Komunikacija sa studentima tijekom nastave, putem elektroničke pošte i Gaudeamus e-learning sustava, E-mail, MS Teams<br />
+</p>
+</div>
+</body>
+</html>

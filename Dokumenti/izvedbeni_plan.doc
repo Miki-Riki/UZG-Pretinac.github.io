@@ -1,0 +1,174 @@
+
+<html
+    xmlns:o='urn:schemas-microsoft-com:office:office'
+    xmlns:w='urn:schemas-microsoft-com:office:word'
+    xmlns='http://www.w3.org/TR/REC-html40'>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<title>:: Izvedbeni plan ::</title>
+
+<style type="text/css">
+
+body
+{
+    margin: 3px;
+    font-family: Arial;
+    font-size: 11px;
+}
+
+td
+{
+    font-size: 11px;  
+}
+
+@page Section1{
+    size: 29.7cm 21cm;
+    margin: 2.5cm 2cm 2cm 2.5cm;
+    mso-page-orientation: landscape;
+    mso-footer:f1;
+}
+
+div.Section1 { page:Section1;}
+
+</style>
+
+</head>
+
+<body onLoad="window.print()">
+<div class="Section1">
+<table border="0" cellpadding="2" style="border-collapse: collapse;" bordercolor="#000000" width="100%">
+    <tr>
+        <td width="100%" height="70" align="center" style="border-bottom: 1px solid #000000">
+            <img src="http://pretinac.vvg.hr/img/vvg-logo-hr-eng.jpg" width="400" height="80" />
+        </td>
+    </tr>
+</table><br /><br />
+<p align="center" style="font-size: 12pt;">
+	<b>IZVEDBENI PLAN NASTAVE</b><br />
+	Akademska godina: <b>2022/2023</b><br />
+	STUDIJ: <b>Održavanje računalnih sustava</b><br />
+	1. godina (Redovni), Zimski semestar</b>
+</p>
+<table border="1" cellpadding="4" style="border-collapse: collapse;" bordercolor="#000000" width="100%">
+	<tr bgcolor="#E5E5E5">
+		<td align="center"><b>NASTAVNIK</b></td>
+		<td align="center"><b>PREDMET</b></td>
+		<td align="center"><b>ŠIFRA</b></td>
+		<td align="center"><b>SATNICA</b></td>
+		<td align="center"><b>ECTS</b></td>
+		<td align="center"><b>Tip</b></td>
+	</tr>
+			<tr>
+
+
+				<td><b>Nositelj predmeta:</b><br /><b>Mato Brizar pred. mag. ing. el.</b><br />Nastavnici i suradnici:<br />Ivica Čulina pred. mag. ing. el. techn. inf.<br />
+				</td>	
+
+							
+				<td>Elektrotehnika I</td>
+				<td align="center">ORS1046</td>
+				<td align="center">2+2+0</td>
+				<td align="center">4</td>
+				<td align="center">Obvezni</td>
+			</tr>
+			<tr>
+
+
+				<td><b>Nositelj predmeta:</b><br /><b>dr. sc. Ivana Rubić v. pred. mag. educ. philol. angl.</b><br />
+				</td>	
+
+							
+				<td>Engleski jezik I</td>
+				<td align="center">ORS106</td>
+				<td align="center">1+1+0</td>
+				<td align="center">2</td>
+				<td align="center">Obvezni</td>
+			</tr>
+			<tr>
+
+
+				<td><b>Nositelj predmeta:</b><br /><b>mr. sc. Dajana Jelčić Dubček v. pred. dipl. ing.</b><br />Nastavnici i suradnici:<br />Ljiljana Ivanković asis. mag. phys.-geophys.<br />
+				</td>	
+
+							
+				<td>Fizika</td>
+				<td align="center">ZAJ102</td>
+				<td align="center">2+1+0</td>
+				<td align="center">4</td>
+				<td align="center">Obvezni</td>
+			</tr>
+			<tr>
+
+
+				<td><b>Nositelj predmeta:</b><br /><b>Antun Matija Filipović v. pred. mag. eur. posl. stud.</b><br />
+				</td>	
+
+							
+				<td>Građa i uporaba računala</td>
+				<td align="center">ORS103</td>
+				<td align="center">2+3+0</td>
+				<td align="center">6</td>
+				<td align="center">Obvezni</td>
+			</tr>
+			<tr>
+
+
+				<td><b>Nositelj predmeta:</b><br /><b>dr. Iva Golubić v. pred. dipl. ing.</b><br />
+				</td>	
+
+							
+				<td>Matematika I</td>
+				<td align="center">ZAJ101</td>
+				<td align="center">2+2+0</td>
+				<td align="center">5</td>
+				<td align="center">Obvezni</td>
+			</tr>
+			<tr>
+
+
+				<td><b>Nositelj predmeta:</b><br /><b>dr. sc. Vladimir Bralić pred. mag. inf.</b><br />
+				</td>	
+
+							
+				<td>Programiranje</td>
+				<td align="center">ORS105</td>
+				<td align="center">2+3+0</td>
+				<td align="center">6</td>
+				<td align="center">Obvezni</td>
+			</tr>
+			<tr>
+
+
+				<td><b>Nositelj predmeta:</b><br /><b>mr. sc. Josip Lopatič pred. dipl. ing.</b><br />
+				</td>	
+
+							
+				<td>Programski jezik C</td>
+				<td align="center">ORS139</td>
+				<td align="center">2+2+0</td>
+				<td align="center">4</td>
+				<td align="center">Izborni</td>
+			</tr>
+			<tr>
+
+
+				<td><b>Nositelj predmeta:</b><br /><b>dr. sc. Davorin Valenčić prof. struč. stud. dipl. ing.</b><br />Nastavnici i suradnici:<br />Ivica Čulina pred. mag. ing. el. techn. inf.<br />Sandra Ćavar naslovni struč. sur.<br />
+				</td>	
+
+							
+				<td>Uređaji računalnih sustava</td>
+				<td align="center">ORS130</td>
+				<td align="center">2+1+0</td>
+				<td align="center">4</td>
+				<td align="center">Izborni</td>
+			</tr>
+</table>
+
+<br />
+<br />
+<br />
+<br />
+</div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <title>Administracija - Ishodi studija</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../slike/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="ishodi_studija.css">
+    <script src="ishodi_studija.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../Početna/home.html">Početna</a></li>
+            <li><a href="https://login.microsoftonline.com/3c77fccc-55b6-4a6d-8a1b-285ba160aa18/oauth2/authorize?client%5Fid=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&response%5Fmode=form%5Fpost&response%5Ftype=code%20id%5Ftoken&resource=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&scope=openid&nonce=222923BC76DF0071AA2458D421362B2B71E304FD8E3D4BDB%2D0FF1C4E3F092E61A9DC2FCAC4F0998EADF742901C727536437F4DAA6A06C5240&redirect%5Furi=https%3A%2F%2Fvvghr%2Esharepoint%2Ecom%2F%5Fforms%2Fdefault%2Easpx&state=OD0w&claims=%7B%22id%5Ftoken%22%3A%7B%22xms%5Fcc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&wsucxt=1&cobrandid=11bd8083%2D87e0%2D41b5%2Dbb78%2D0bc43c8a8e8a&client%2Drequest%2Did=4a3eaea0%2D80d3%2D6000%2D7b7b%2D9614d4ab5428&sso_reload=true" target="_blank">Raspored nastave</a></li>
+            <li><a href="../index.html" onclick="LogOut()">Odjavi se</a></li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+    </nav>
+    <div class="box">
+        <div class="slika">
+            <img src="../slike/logo.png">
+        </div>
+        <ul>
+            <li><a href="predmeti.html">predmeti</a></li>
+            <li><a href="dvorane.html">dvorane i raspored nastave</a></li>
+            <li id="zadnji"><a href="ishodi_studija.html">ishodi studija</a></li>
+        </ul>
+        <h1>ishodi studija</h1>
+        <h3>ISHODI STUDIJSKOG PROGRAMA</h3>
+        <div class="cont">
+            <label>Akademska godina:</label>
+            <select id="drop_down">
+                <option value="">Odaberite akademsku godinu</option>
+                <option value="1">2023./2022.</option>
+                <option value="2">2022./2021.</option>
+            </select>
+            <br>
+            <label>Studij:</label>
+            <select id="sel2">
+                <option value="" id="show">Odaberite studij</option>
+                <option value="1" id="smjer" style="display: none;">Održavanje računalnih sustava</option>
+            </select>
+            <table id="table">
+                <tr>
+                    <th>razina</th>
+                    <th>elementi</th>
+                    <th>ishodi učenja</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Znanje i razumijevanje</td>
+                    <td class="txt"><b>ORS3.</b> Objasniti osnovne arhitekture, protokole i procedure i standarde računalnih sustava i mreža
+                        <br>
+                        <b>ORS4.</b> Opisati principe i metode održavanja računalnih sustava i provođenja kontrole kvalitete u računalstvu sukladno važećim procedurama i standardima
+                    </td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Sposobnosti primjene znanja i razumjevanja
+                    </td>
+                    <td class="txt"><b>ORS1.</b> Primijeniti teorijske osnove matematike, fizike i elektrotehnike u računalstvu
+                        <br>
+                        <b>ORS2.</b> Koristiti metode programskog inženjerstva i programiranja u suvremenim programskim jezicima
+                        <br>
+                        <b>ORS5.</b> Koristiti engleski jezik u govoru i pismu u području informatike i računalstva
+                        <br>
+                        <b>ORS7.</b> Koristiti suvremene programske alate
+                        <br>
+                        <b>ORS8.</b> Prilagođavati računalne sustave sukladno potrebama korisnika
+                        <br>
+                        <b>ORS9.</b> Aktivno koristiti programske jezike u izradi, analizi i prilagođavanju programske potpore
+                        <br>
+                        <b>ORS10.</b> Samostalno ili timski realizirati projekt sukladno zahtjevima i potrebama korisnika, a u skladu s usvojenim standardima, tehnologijama i metodologijama provedbe i predočavanja istog
+                    </td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Zaključivanje i rasuđivanje</td>
+                    <td class="txt"><b>ORS6.</b> Predlagati rješenja u području računalstva s analizom i vrednovanjem istog i sličnih rješenja
+                    </td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Komuniciranje stavova, ideja, problema i rješenja
+                    </td>
+                    <td class="txt"><b>ORS11.</b> Predlagati rješenja u primjeni informacijskih tehnologija u poslovnoj sredini
+                        <br>
+                        <b>ORS12.</b> Predložiti rješenja za poboljšanje sigurnosti računalnih sustava i podataka na njima
+                        <br>
+                        <b>ORS13.</b> Prezentirati svoje stavove, rješenja i projekte koristeći komunikacijske vještine
+                        <br>
+                        <b>ORS14.</b> Predložiti kreativno rješenje u poslovnom okruženju
+                    </td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Razvijene vještine učenja</td>
+                    <td class="txt"><b>ORS15.</b> Koristiti stručnu literaturu i znanstvene i stručne resurse na Internetu
+                        <br>
+                        <b>ORS16.</b> Koristiti elektroničke metode za poučavanje i samostalno učenje (e-učenje)
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <footer>UZG Pretinac</footer>
+    </div>
+    <div id="preloader" class="preloader">
+        <div class="loader"></div>
+    </div>
+</body>
+</html>

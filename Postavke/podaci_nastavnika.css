@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-image: url("../slike/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    display: block;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-image: inherit;
+	background-size: inherit;
+	background-position: inherit;
+    filter: brightness(30%);
+}
+
+nav {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    top: 0;
+    background: rgba(255, 255, 255, 0.11);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(5px); 
+    opacity: .98;
+    z-index: 1;
+}
+
+nav ul {
+    width: 100%;
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    padding: 1em;
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li a:hover {
+    opacity: .75;
+}
+
+nav .fa-bars {
+    display: none;
+    padding: 1em;
+    color: white;
+}
+
+.box {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 5%;
+    width: 100%;
+    min-height: 100%;
+    background-color: white;
+    opacity: .95;
+}
+
+.box .slika {
+    background-color: rgb(0, 62, 126);
+    width: 100%;
+}
+
+.box .slika img {
+    display: table;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: .5em;
+}
+
+.box ul {
+    list-style: none;
+    padding: 1em;
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 100%;
+}
+
+.box ul li {
+    display: inline-block;
+}
+
+.box ul li:first-letter {
+    text-transform: capitalize;
+}
+
+.box ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    margin: 1em;
+}
+
+.box ul li a:hover {
+   color: rgb(0, 62, 126);
+    
+}
+
+.box h1 {
+    color: #E5E5E5;
+    margin-top: 1em;
+    text-align: center;
+    text-shadow: 2px 2px rgb(0, 62, 126);
+    text-transform: uppercase;
+    letter-spacing: .15em;
+}
+
+.box .cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    padding: 1em;
+}
+
+.box .card {
+    width: 300px;
+    margin-top: 2em;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 1em;
+    border: 1px solid gainsboro;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.card h3 {
+    padding: .5em;
+    text-transform: capitalize;
+}
+
+.card img {
+    width: 80%;
+}
+
+.card p {
+    padding: .25em;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 1em;
+    color: rgb(0, 62, 126);
+    text-decoration: none;
+}
+
+.card a:hover {
+    opacity: .8;
+}
+
+.box .cont2 {
+    display: none;
+    width: 90%;
+    margin-top: 2em;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 1em;
+    border: 1px solid gainsboro;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+}
+
+.cont2 table {
+    display: table;
+    border-collapse: collapse;
+    border: 1px solid lightgray;
+    margin-top: 1em;
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 95%;
+}
+
+.cont2 table tr, th, td {
+    padding: 1em;
+    border: 1px solid lightgray;
+    text-align: center;
+}
+
+.cont2 table th {
+    text-transform: capitalize;
+    background-color: rgb(0, 62, 126);
+    color: white;
+}
+
+.cont2 h4 {
+    margin: 1em 0 .35em 1em;
+    font-size: 1.1em;
+
+}
+
+.cont2 ol {
+    margin-left: 2em;
+}
+
+.cont2 ol li {
+    padding: .35em;
+}
+
+.cont2 p {
+   text-align: center;
+   margin-top: 1em;
+   font-weight: bold;
+}
+
+.cont2 a {
+    text-decoration: none;
+    color: rgb(0, 62, 126);
+    font-weight: 500;
+}
+
+.cont2 a:hover {
+    opacity: .8;
+    text-decoration: underline;
+}
+
+.box footer {
+    margin-top: auto;
+    background-color: rgb(0, 62, 126);
+    width: 100%;
+    color: white;
+    padding: .5em;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+#preloader {
+    display: none;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.preloader .loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+@media screen and (max-width: 768px) {
+    nav .fa-bars {
+        display: flex;
+        position: absolute;
+        right: 0;
+        padding: .5em;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 0%;
+		flex-direction: column;
+		text-align: center;
+		margin-top: 2em;
+        background-color: rgb(0, 62, 126);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        animation: slide-down;
+    }
+
+    @keyframes slide-down {
+        0% {
+            top: -250px;
+        }
+
+        100% {
+            top: 0%;
+        }    
+    }
+
+    @keyframes slide-up {
+        0% {
+            top: 0%;
+        }
+
+        100% {
+            top: -250px;
+        }
+    }
+
+    nav ul.active {
+        display: flex;
+        animation: slide-up;
+    }
+
+    .fa-bars {
+        transition: transform .25s ease-in-out;
+    }
+
+    .fa-times {
+        transform: rotate(90deg);
+        transition: transform .25s ease-in-out;
+    }
+
+    .slika img {
+        width: 70%;
+    }
+
+    .box ul li {
+        display: block;
+        margin-top: 1em;
+        border-bottom: 1px solid gainsboro;
+        padding-bottom: 1em;
+    }
+
+    .box ul li#zadnji {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .box footer {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cont2 table {
+        font-size: .7em;
+    }
+
+    .cont2 h4 {
+        font-size: 1em;
+    }
+
+    .cont2 ol {
+        font-size: .8em;
+    }
+
+    .cont2 p {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .cont2 table {
+        font-size: .5em;
+    }
+}

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <title>Studenti - Predmeti</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../slike/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="predmeti.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="predmeti.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../Početna/home.html">Početna</a></li>
+            <li><a href="https://login.microsoftonline.com/3c77fccc-55b6-4a6d-8a1b-285ba160aa18/oauth2/authorize?client%5Fid=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&response%5Fmode=form%5Fpost&response%5Ftype=code%20id%5Ftoken&resource=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&scope=openid&nonce=222923BC76DF0071AA2458D421362B2B71E304FD8E3D4BDB%2D0FF1C4E3F092E61A9DC2FCAC4F0998EADF742901C727536437F4DAA6A06C5240&redirect%5Furi=https%3A%2F%2Fvvghr%2Esharepoint%2Ecom%2F%5Fforms%2Fdefault%2Easpx&state=OD0w&claims=%7B%22id%5Ftoken%22%3A%7B%22xms%5Fcc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&wsucxt=1&cobrandid=11bd8083%2D87e0%2D41b5%2Dbb78%2D0bc43c8a8e8a&client%2Drequest%2Did=4a3eaea0%2D80d3%2D6000%2D7b7b%2D9614d4ab5428&sso_reload=true" target="_blank">Raspored nastave</a></li>
+            <li><a href="../index.html" onclick="LogOut()">Odjavi se</a></li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+    </nav>
+    <div class="box" id="box">
+        <div class="slika">
+            <img src="../slike/logo.png">
+        </div>
+        <ul class="nav2">
+            <li><a href="predmeti.html">predmeti</a></li>
+            <li><a href="ocjene.html">ocjene</a></li>
+            <li><a href="ispiti.html">ispiti</a></li>
+            <li><a href="upisi.html">upisi</a></li>
+            <li id="zadnji"><a href="diplomirali.html">diplomirali</a></li>
+        </ul>
+        <div class="mob_menu">
+            <i class="fa-solid fa-chevron-right" id="icon"></i>
+        </div>
+        <div class="side_menu">
+            <h4>1. godina zimski semestar</h4>
+            <a href="#cont" onclick="showItem(1);">elektrotehinka 1</a>
+            <a href="#cont">engleski 1</a>
+            <a href="#cont">fizika</a>
+            <a href="#cont">građa i uporaba računala</a>
+            <a href="#cont">matematika 1</a>
+            <a href="#cont">programiranje</a>
+            <a href="#cont">uređaji računalnih sustava</a>
+            <h4>1. godina ljetni semestar</h4>
+            <a href="#cont">algoritim i strukture podataka</a>
+            <a href="#cont">elektrotehnika 2</a>
+            <a href="#cont">engleski jezik 2</a>
+            <a href="#cont">matematika 2</a>
+            <a href="#cont">operacijski sustavi 1</a>
+            <a href="#cont">simbolička logika</a>
+            <a href="#cont">psihologija stresa</a>
+           <h4>2. godina zimski semestar</h4>
+            <a href="#cont">baze podataka</a>
+            <a href="#cont">engleski jezik 3</a>
+            <a href="#cont">matematika 3</a>
+            <a href="#cont">operacijski sustavi 2</a>
+            <a href="#cont">osiguravanje i kontrola kvalitete</a>
+            <a href="#cont">računala i procesi</a>
+            <a href="#cont">internet infrastruktura</a>
+            <h4>2. godina ljetni semestar</h4>
+            <a href="#cont">komunikologija</a>
+            <a href="#cont">menadžment i poduzetništvo</a>
+            <a href="#cont">održavanje računalnih sustava i mreža</a>
+            <a href="#cont">računalne mreže</a>
+            <a href="#cont">računalno upravljanje procesima</a>
+            <a href="#cont">uredske aplikacije</a>
+            <a href="#cont">programiranje baze podataka</a>
+            <h4>3. godina zimski semestar</h4>
+            <a href="#cont">održavanje računala</a>
+            <a href="#cont">stručna praksa</a>
+            <a id="web" class="prvi" href="#cont" onclick="showItem(2)">web aplikacije</a>
+            <h4>3. godina ljetni semestar</h4>
+            <a href="#cont">projektiranje informacijskih sustava</a>
+            <a href="#cont">sigurnost informacijskih sustava</a>
+            <a href="#cont">završni rad</a>
+        </div>
+        <div class="title">
+            <h1>Predmeti</h1>
+        </div>
+        <div id="cont">
+            <div class="cont" id="cont1">
+                <h4>Elektrotehnika 1 <a class="down" href="../Dokumenti/izvedbeni_plan_predmeta.doc" download><i class="fa-solid fa-download" title="Izvedbeni plan predmeta"></i></a></h4>
+                <div class="content">
+                    <h5>Opće informacije</h5>
+                    <p><b>Oznaka predmeta:</b> ORS1046</p>
+                    <p><b>ECTS:</b> 4</p>
+                    <p><b>Semestar:</b> 1</p>
+                    <p><b>Broj sati predavanja:</b> 2</p>
+                    <p><b>Broj sati vježbi:</b> 2</p>
+                    <p><b>Broj sati seminara:</b> 0</p>
+                </div>
+                <div class="content">
+                    <h5>Cilj predmeta</h5>
+                    <p>Stjecanje temeljnih znanja iz elektrostatike, strujnih krugova istosmjerne struje i stacionarnih magnetskih polja. Mjerne metode i pogreške mjerenja</p>
+                </div>
+                <div class="content">
+                    <h5>Sadržaj predmeta</h5>
+                    <p>Uvod u elektricitet i magnetizam. Međunarodni sustav jedinica SI. Sile među nabojima, Coulombov zakon. Električno polje točkastog naboja. Gaussov zakon. Rad u električnom polju, električki potencijal i napon. Pločasti kondenzator, kapacitet i osnovni spojevi kondenzatora, rješavanje elektrostatskih mreža. Elektromotorna sila i Voltina baterija. Jakost električne struje. Ohmov zakon, jednostavni strujni krug, osnovni spojevi otpora i rješavanje zadataka. Energija i snaga istosmjerne struje, Jouleov zakon. Metode rješavanja složenih električkih mreža. Sile između magnetskih polova, magnetska indukcija i jakost magnetskog polja. Materijali u magnetskom polju. Torusni svitak, magnetski krug, induktivitet. Sila u magnetskom polju na vodič kojim teče struja (Lorentzova sila) i Lenzov zakon. Faradayjev zakon elektromagnetske indukcije, smjer induciranog napona i samoindukcija. Načelo rada istosmjernog motora i generatora istosmjernog napona. Apsolutne mjerne metode, Rayleighova strujna vaga i ostvarivanje jedinice amper, etaloni napona i otpora, mjerni otpornici, kondenzatori i svici. Laboratorijski izvori, apsolutna i relativna pogreška, pogreške mjerenja, Gaussova ili normalna razdioba, pouzdanosti i granice pogrešaka. Električni mjerni instrumenti, ommetar, mjerenje otpora Wheatstoneovim i Thomsonovim mostom.</p>
+                </div>
+                <div class="content">
+                    <h5>
+                        Opće i specifične kompetencije (znanje i vještine)
+                    </h5>
+                    <p>
+                        Poznavanje međunarodnog sistema mjernih    jedinica, korištenje prefiksa, ispravan prikaz rezultata.
+                        Shvaćanje pojmova iz elektrostatskih polja, utjecaj na materiju, korištenje električnih polja u elektrotehnici.
+                        Električna struja, pojam, korist, rješavanje jednostavnih otpornih mreža, razlikovanje pojma energije, snminimalno bodova i rada.
+                        Shvaćanje pojmova iz magnetskih polja, utjecaj na materiju, korištenje magnetskih polja u elektrotehnici.
+                        Poznavanje građe el. mjernog instrumenta, njegovo korištenje i razlikovanje idealnih i realnih instrumenata, osnove mjerenja električnih veličina. Poznavanje razlike između apsolutnih i običnih metoda mjerenja.
+                        Shvaćanje uzroka koji dovode do različitih pogrešaka mjerenja, kao i stjecanje znanja kako smanjiti njihov utjecaj na rezultat mjerenja.
+                    </p>
+                </div>
+                <div class="content">
+                    <h5>Ishodi učenja</h5>
+                    <p>
+                        Studenti ću nakon polaganja ovog predmeta   moći:
+                    </p>
+                    <p>
+                        1. Opisati svojstva i pojave u električnom i magnetskom polju.
+                    </p>
+                    <p>
+                        2. Rješavati elektrostatske mreže.
+                    </p>
+                    <p>
+                        3. Izračunati jakost struje, napon i snagu na otporu mreže.
+                    </p>
+                    <p>
+                        4. Objasniti osnovne pojmove i svojstava elektromagnetske indukcije.
+                    </p>
+                    <p>
+                        5. Objasniti i izračunati pogreške mjerenja, kao i granice pogrešaka.
+                    </p>
+                    <p>
+                        Navedeni ishodi učenja doprinose ishodima učenja studijskog programa:
+                        ORS1. Opisati teorijske osnove matematike, fizike i elektrotehnike kao i njihovu primjenu i inženjerstvu.
+                    </p>
+                </div>
+                <div class="content">
+                    <h5>Način održavanja nastave</h5>
+                    <p>
+                        Predavanja s multimedijalnom projekcijom.
+                    </p>
+                    <p>
+                        Vježbe: rad s multimedijalnom projekcijom.
+                    </p>
+                    <p>
+                        Laboratorijske vježbe: rad s programom Electronic Workbench.
+                    </p>
+                    <p>
+                        Samostalni rad kroz domaće i školske zadaće te kroz seminarske radove.
+                    </p>
+                </div>
+                <div class="content">
+                    <h5>
+                        Tip vježbe (labaratorijske, audiotorne, terenske)
+                    </h5>
+                    <p>Auditorne i laboratorijske.</p>
+                </div>
+                <div class="content">
+                    <h5>Sadržaj vježbi</h5>
+                    <p>
+                        Auditorne vježbe – rješavanje numeričkih zadataka iz područja obrađenih na predavanjima: Coulombov zakon i električno polje, električni potencijal i napon. Spojevi kondenzatora i elektrostatske mreže. Ohmov zakon i jednostavne električke mreže. Metode rješavanje linearne mreže istosmjerne struje. Energija i snaga istosmjerne struje. Indukcija i jakost magnetskog polja, sila na vodič kojim teče struja. Elektromagnetska indukcija i samoindukcija.
+                    </p>
+                    <p>
+                        Laboratorijske vježbe – primjena osnovnih postupaka za mjerenje napona i struja, razlika u rezultatu mjerenja idealnim i realnim voltmetrom i ampermetrom, praktična provjera metoda za rješavanje električnih mreža. Pogreške mjerenja i granice pogreške mjerenih veličina. Proširivanja mjernog područja instrumenta.
+                    </p>
+                </div>
+                <div class="content">
+                    <h5>Praktičan rad</h5>
+                    <p>
+                        Rješavanje jednostavnih strujnih krugova istosmjerne struje.
+                    </p>
+                    <p>
+                        Pronalaženje određenih zadanih pojmova na internetu i njihova prezentacija na vježbama.
+                    </p>
+                </div>
+                <div class="content">
+                    <h5>Obveze studenata i uvjeti</h5>
+                    <p>
+                        Obvezno pohađanje predavanja i vježbi.
+                        Prisustvovanje na nastavi se valorizira bodovima.
+                    </p>
+                    <p>
+                        Sudjelovanje u aktivnostima na auditornim vježbama i laboratorijskim vježbama se valorizira bodovima.
+                    </p>
+                    <p>
+                        Uvjet za pristup završnom ispitu: Minimalno prisustvo na 30% sati nastave tijekom semestra.
+                        Pristup na najmanje 3 laboratorijske vježbe i postignuta ukupno najmanje 4,5 boda.
+                    </p>
+                </div>
+                <div class="content">
+                    <h5>Način provjere znanja</h5>
+                    <p>
+                      Pismeni ispit: Prolaz uz postignuće najmanje 50% maksimalnog broja bodova.
+                    </p>
+                    <p>
+                      Usmeni ispit: Prolaz uz pozitivni odgovor na zadatke i pitanja.
+                    </p>
+                    <p>
+                      Za pozitivnu ocjenu iz predmeta potrebno je da i pismeni i usmeni dio ispita budu pozitivno ocijenjeni. Za pristup pismenom dijelu ispita student mora biti prisutan na minimalno pet termina predavanja ili vježbi, iz laboratorijskih vježbi mora sakupiti minimalno 4,5 boda, te sakupiti minimalno 18,75 bodova. Za pristup usmenom dijelu ispita, uz gore navedeno, mora imati ukupno minimalno 30 bodova iz svih kolokvija, uz minimalno 8 bodova iz svakog kolokvija.
+                    </p>
+                </div>
+                <div class="content">
+                    <h5>Kriteriji bodovanja</h5>
+                    <p>
+                        Skala ocjena i ostvarivanje prava izlaska na Završni ispit definirani su Pravilnikom o ocjenjivanju.
+                    </p>
+                    <table>
+                        <tr>
+                            <th>uvjet za prijavu ispita</th>
+                            <th>kriterij bodovanja</th>
+                            <th>minimalno bodova</th>
+                            <th>maksimalno bodova</th>
+                        </tr>
+                        <tr>
+                            <td>da</td>
+                            <td>aktivnost na nastavi</td>
+                            <td>1</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>da</td>
+                            <td>kolokvij 1</td>
+                            <td>8</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>da</td>
+                            <td>kolokvij 2</td>
+                            <td>8</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>ne</td>
+                            <td>kolokvij 3</td>
+                            <td>0</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>da</td>
+                            <td>laboratorijske vježbe</td>
+                            <td>4,5</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>ne</td>
+                            <td>seminarski rad</td>
+                            <td>0</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>ne</td>
+                            <td>završni ispit</td>
+                            <td>0</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><b>ukupno bodova</b></td>
+                            <td colspan="2"><b>100</b></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="content">
+                    <h5>Preduvjeti</h5>
+                </div>
+                <div class="content">
+                    <h5>Procjena opterećenja studenata</h5>
+                    <p>
+                        Ukupno 120 sati (4 ECTS):
+                        Predavanja - 30 sati (1 ECTS)
+                    </p>
+                    <p>
+                        Aktivnosti na sustavu učenja - 20 sati (0,6 ECTS)
+                    </p>
+                    <p>
+                        Priprema i izvođenje vježbi - 42 sata (1,4 ECTS)
+                    </p>
+                    <p>
+                        Čitanje obvezne literature i pretraživanje interneta - 25 sati (1 ECTS)
+                    </p>
+                </div>
+                <div class="content">
+                    <h5>Konstruktivno poravnanje</h5>
+                    <table>
+                        <tr>
+                            <th>nastavna aktivnost</th>
+                            <th>opterećenje studenata</th>
+                            <th>ishodi</th>
+                            <th>način praćenja/provjera</th>
+                        </tr>
+                        <tr>
+                            <td>Predavanje - električno polje</td>
+                            <td>0,50</td>
+                            <td>1,2</td>
+                            <td>Usmeno izlaganje, prezentacije u Power Pointu, interaktivni rad</td>
+                        </tr>
+                        <tr>
+                            <td>Predavanje - istosmjerni strujni krug</td>
+                            <td>0,50</td>
+                            <td>3,5</td>
+                            <td>Usmeno izlaganje, prezentacije u Power Pointu, interaktivni rad</td>
+                        </tr>
+                        <tr>
+                            <td>Predavanje - magnetsko polje</td>
+                            <td>0,50</td>
+                            <td>4,5</td>
+                            <td>Usmeno izlaganje, prezentacije u Power Pointu, interaktivni rad</td>
+                        </tr>
+                        <tr>
+                            <td>Vježbe - pojašnjavanje i uvježbavanje prijeđenog gradiva sa predavanja</td>
+                            <td>1,00</td>
+                            <td>1-5</td>
+                            <td>Usmeno izlaganje, prezentacije u Power Pointu, testovi, seminari</td>
+                        </tr>
+                        <tr>
+                            <td>Samostalni rad studenta, pripreme za nastavu i završni ispit, završni ispit</td>
+                            <td>1,50</td>
+                            <td>1-5</td>
+                            <td>Kolokvij, lab. vježbe, seminar, završni ispit</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><b>ukupno</b></td>
+                            <td colspan="2"><b>4 ECTS</b></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="content">
+                    <h5 id="links">Nastavni materijali</h5>
+                    <a class="file" href="../Dokumenti/ET1_pitanja_za_usmeni_ispit.pdf" download><i class="fa-solid fa-file"></i>ET1 pitanja za usmeni ispit.pdf</a>
+                    <br>
+                    <a class="file" href="../Dokumenti/Magnetizam.7z" download><i class="fa-solid fa-file"></i>Magnetizam.7z</a>
+                    <br>
+                    <a class="file" href="../Dokumenti/Električne_mreže.7z" download><i class="fa-solid fa-file"></i>Električne mreže.7z</a>
+                </div>
+                <div class="content">
+                    <h5>Obvezna literatura</h5>
+                    <p>
+                        1. Kozlina, Ž., Osnove elektrotehnike, VVG, Velika Gorica, 2013.
+                    </p>
+                    <p>
+                        2. Pinter, V., Osnove elektrotehnike I dio, Tehnička knjiga, Zagreb, 1994.
+                    </p>
+                    <p>
+                        3. Šehović, E.; Tkalić, M. & Felja, I.: Osnove elektrotehnike - zbirka primjera (prvi dio), Školska knjiga, Zagreb, 1984.
+                    <p>
+                </div>
+                <div class="content">
+                    <h5>Preporučena literatura</h5>
+                    <p>
+                        1. Lončar, J., Osnove elektrotehnike I, Tehnička knjiga, Zagreb 1956.
+                    </p>
+                    <p>
+                        2. Jajac, B., Teorijske osnove elektrotehnike I, Graphis, Zagreb 1998.
+                    </p>
+                    <p>
+                        3. Jajac, B., Teorijske osnove elektrotehnike II, Graphis, Zagreb 2002.
+                    </p>
+                    <p>
+                        4. Maksimovič, Zadaci iz osnova elektrotehnike I, Sveučilište u Zagrebu, skripta, 1971.
+                    </p>
+                </div>
+                <div class="content" id="kraj">
+                    <h5>Napomene</h5>
+                    <p>
+                        Uz navedenu literaturu moguće je koristiti bilo koju literaturu koja pokriva dio gradiva predmeta.
+                    </p>
+                </div>
+            </div>
+            <!----------------------------------->
+            <!----------------------------------->
+            <!----------------------------------->
+            <!----------------------------------->
+            <!----------------------------------->
+            <!----------------------------------->
+            <!----------------------------------->
+            <!----------------------------------->
+            <div class="cont" id="cont2">
+                <h4>Web aplikacije <a class="down" href="../Dokumenti/izvedbeni_plan_predmeta_web.doc" download><i class="fa-solid fa-download" title="Izvedbeni plan predmeta"></i></a></h4>
+                <div class="content">
+                    <h5>Opće informacije</h5>
+                    <p><b>Oznaka predmeta:</b> ORS135</p>
+                    <p><b>ECTS:</b> 4</p>
+                    <p><b>Semestar:</b> 5</p>
+                    <p><b>Broj sati predavanja:</b> 2</p>
+                    <p><b>Broj sati vježbi:</b> 1</p>
+                    <p><b>Broj sati seminara:</b> 0</p>
+                </div>
+                <div class="content">
+                    <h5>Cilj predmeta</h5>
+                    <p>Osposobiti studente za samostalnu instalaciju, konfiguriranje i održavanje web servera, upoznavanje arhitekture i organizacije web sitea, pregled FTP servisa, World Wide Web servisa, kao i za rješavanje tipičnih problema.</p>
+                </div>
+                <div class="content">
+                    <h5>Sadržaj predmeta</h5>
+                    <p>Infrastruktura Interneta. Podešavanje web servera. Web kontrole za prikaz podataka. HTML server kontrole. Kontrola ispravnosti podataka. Upravljanje stanjem PHP aplikacije. Sigurnost web servisa. Web servisi. Korištenje web servisa. Izrada web servisa.</p>
+                </div>
+                <div class="content">
+                    <h5>
+                        Opće i specifične kompetencije (znanje i vještine)
+                    </h5>
+                    <p>
+                        - Osposobljenost za instalaciju web servisa
+                        <br>
+                        - Održavanje web servisa
+                        <br>
+                        - Održavanje web servera
+                    </p>
+                </div>
+                <div class="content">
+                    <h5>Ishodi učenja</h5>
+                    <p>Studenti će nakon polaganja ovog predmeta moći:
+                        <br>
+                        1. Izgraditi web aplikaciju.
+                        <br>
+                        2. Primijeniti metode dohvaćanja i izmjene podataka u web aplikaciji.
+                        <br>
+                        3. Demonstrirati načine poboljšanja web aplikacije.
+                        <br>
+                        4. Opisati XML jezik i njegovu primjenu.
+                        <br>
+                        5. Prepoznati potrebu cjeloživotnog učenja usvajanjem novih tehnologija.
+                        <br>
+                        6. Uskladiti aktivnosti u radu multidisciplinarnog tima.
+                        
+                        Navedeni ishodi učenja doprinose ishodima učenja studijskog programa:
+                        <br>
+                        ORS7. Koristiti suvremene programske alate
+                        <br>
+                        ORS9. Aktivno koristiti programske jezike u izradi, analizi i prilagođavanju programske potpore
+                        <br>
+                        ORS10. Samostalno ili timski realizirati projekt sukladno zahtjevima i potrebama korisnika, a u skladu s usvojenim standardima, tehnologijama i metodologijama provedbe i predočavanja istog
+                        <br>
+                        ORS6. Predlagati rješenja u području računalstva s analizom i vrednovanjem istog i sličnih rješenja
+                        <br>
+                        ORS13. Prezentirati svoje stavove, rješenja i projekte koristeći komunikacijske vještine</p>
+                </div>
+                <div class="content">
+                    <h5>Način održavanja nastave</h5>
+                    <p>- Predavanja s multimedijskom projekcijom
+                        <br>
+                    - Vježbe na računalima u PC učionici</p>
+                </div>
+                <div class="content">
+                    <h5>
+                        Tip vježbe (labaratorijske, audiotorne, terenske)
+                    </h5>
+                    <p>Laboratorijske.</p>
+                </div>
+                <div class="content">
+                    <h5>Sadržaj vježbi</h5>
+                    <p>
+                        - konfiguriranje internetske infrastrukture za web aplikacije
+                        <br>
+                        - izrada web servisa
+                        <br>
+                        - web servisi za komunikacija s bazom podataka
+                        <br>
+                        - izrada web aplikacije
+                    </p>
+                </div>
+                <div class="content">
+                    <h5>Praktičan rad</h5>
+                    <p>- rad sa sustavima za upravljanje sadržajem
+                        <br>
+                        - izrada vlastite web aplikacije s jednim od sustava za upravljanje sadržajem</p>
+                </div>
+                <div class="content">
+                    <h5>Obveze studenata i uvjeti</h5>
+                    <p>- obvezno pohađanje vježbi
+                        <br>
+                        - prisustvovanje na predavanjima se valorizira bodovima
+                        <br>
+                        - sudjelovanje u aktivnostima na sustavu e-učenja se valorizira bodovima</p>
+                </div>
+                <div class="content">
+                    <h5>Način provjere znanja</h5>
+                    <p>Praćenje rada i aktivnosti studenata tijekom semestra:
+                    </p>
+                    <p>
+                        Provjera znanja putem kolokvija - 25 bodova
+                    </p>
+                    <p>
+                        Pripremljenost i aktivnost na nastavi - 15 bodova
+                    </p>
+                    <p>
+                        Izrada i predaja seminarskog rada - 35 bodova
+                    </p>
+                    <p>
+                        Završni ispit - 25 bodova
+                    </p>
+                </div>
+                <div class="content">
+                    <h5>Kriteriji bodovanja</h5>
+                    <p>
+                        Skala ocjena i ostvarivanje prava izlaska na Završni ispit definirani su Pravilnikom o ocjenjivanju.
+                    </p>
+                    <table>
+                        <tr>
+                            <th>uvjet za prijavu ispita</th>
+                            <th>kriterij bodovanja</th>
+                            <th>minimalno bodova</th>
+                            <th>maksimalno bodova</th>
+                        </tr>
+                        <tr>
+                            <td>ne</td>
+                            <td>kolokvij 1</td>
+                            <td>0</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>ne</td>
+                            <td>Pripremljenost za nastavu i aktivnost na nastavi</td>
+                            <td>0</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>ne</td>
+                            <td>seminarski rad 1</td>
+                            <td>0</td>
+                            <td>35</td>
+                        </tr>
+                        <tr>
+                            <td>ne</td>
+                            <td>završni ispit</td>
+                            <td>0</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><b>ukupno bodova</b></td>
+                            <td colspan="2"><b>100</b></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="content">
+                    <h5>Preduvjeti</h5>
+                </div>
+                <div class="content">
+                    <h5>Procjena opterećenja studenata</h5>
+                    <p>
+                        Ukupno 120 sati (4 ECTS):
+                        Predavanja - 30 sati (1 ECTS)
+                    </p>
+                    <p>
+                        Aktivnosti na sustavu učenja - 20 sati (0,6 ECTS)
+                    </p>
+                    <p>
+                        Priprema i izvođenje vježbi - 45 sata (1,4 ECTS)
+                    </p>
+                    <p>
+                        Čitanje obvezne literature i pretraživanje interneta - 25 sati (1 ECTS)
+                    </p>
+                </div>
+                <div class="content">
+                    <h5>Konstruktivno poravnanje</h5>
+                    <table>
+                        <tr>
+                            <th>nastavna aktivnost</th>
+                            <th>opterećenje studenata</th>
+                            <th>ishodi</th>
+                            <th>način praćenja/provjera</th>
+                        </tr>
+                        <tr>
+                            <td>Predavanja</td>
+                            <td>1,00</td>
+                            <td>2, 5, 6</td>
+                            <td>Diskusije, praćenje prisustva
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Priprema i izvođenje vježbi</td>
+                            <td>1,00</td>
+                            <td>2, 3, 4, 5</td>
+                            <td>Provjera i analiza rezultata vježbi</td>
+                        </tr>
+                        <tr>
+                            <td>Samostalni rad studenata, pripreme za nastavu, parcijalne ispite (kolokvije) i za završni ispit
+                            </td>
+                            <td>2,00</td>
+                            <td>1, 4, 6</td>
+                            <td>Kolokviji, završni ispit</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><b>ukupno</b></td>
+                            <td colspan="2"><b>4 ECTS</b></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="content">
+                    <h5>Obvezna literatura</h5>
+                    <p>1. Šimec, Alen; Uvod u HTML, XHTML i CSS; Tehničko veleučilište u Zagrebu; 2011.
+                    </p>
+                    <p>
+                        2. Šimec Alen; Programiranje i optimizacija Internet stranica u HTML5 okruženju; Tehničko veleučilište u Zagrebu; 2015.
+                    </p>
+                    <p>
+                        3. Nixon, Robin; Learning PHP, MySQL, JavaScript, CSS & HTML5, 3rd Edition; O’Reilly Media; 2014.
+                    </p>
+                    <p>
+                        4. Purewal, S. Learning Web App Development. O'Reilly Media, 2014.
+                    </p>
+                    <p>
+                        5. Fielding, J. Beginning Responsive Web Design with HTML5 and CSS3. Apress, 2014.</p>
+                </div>
+                <div class="content">
+                    <h5>Preporučena literatura</h5>
+                    <p>1. Firtman, M. Programming the Mobile Web, 2nd Edition. O'Reilly Media, 2013.
+                    </p>
+                    <p>
+                        2. Benmessaoud, N. Williams, C.J. Mahesh Mudigonda, U. Tulloch, M. Network Virtualization and Cloud Computing. Microsoft Press, 2014.
+                    </p>
+                    <p>
+                        3. Seyed M.M. “Saied” Tahaghoghi; Hugh E. Williams; Learning MySQL; O’Reilly Media; 2007.
+                    </p>
+                    <p>
+                        4. S. Sumathi, S. Esakkirajan; Fundamentals of Relational Database Management Systems; Springer; 2007.
+                    </p>
+                    <p>
+                        5. Skriptni jezik - PHP (www.php.net)
+                    </p>
+                    <p>
+                        6. Baze podataka - MySQL (www.mysql.com)
+                    </p>
+                    <p>
+                        7. W3C preporuke (www.w3c.org)
+                    </p>
+                    <p>
+                        8. W3Schools Online Web Tutorials (www.w3schools.com)
+                    </p>
+                </div>
+                <div class="content" id="kraj">
+                    <h5>Napomene</h5>
+                </div>
+            </div>
+        </div>
+        <footer>UZG Pretinac</footer>
+    </div>
+    <div id="preloader" class="preloader">
+        <div class="loader"></div>
+    </div>
+</body>
+</html>

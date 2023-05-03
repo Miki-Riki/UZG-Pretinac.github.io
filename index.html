@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <title>UZG Pretinac</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../slike/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <form>
+        <img src="slike/logo.png">
+        <h2>UZG Pretinac</h2>
+        <label for="un">Korisničko ime</label>
+        <input type="text" id="un" name="un" required>
+        <label for="pw">Lozinka</label>
+        <input type="password" id="pw" name="pw" required>
+        <p id="error"></p>
+        <button onclick="Login()">Prijavi se</button>
+      </form>
+      <div id="preloader" class="preloader">
+        <div class="loader"></div>
+      </div>
+</body>
+</html>

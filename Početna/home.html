@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <title>Početna</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../slike/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Početna</a></li>
+            <li><a href="https://login.microsoftonline.com/3c77fccc-55b6-4a6d-8a1b-285ba160aa18/oauth2/authorize?client%5Fid=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&response%5Fmode=form%5Fpost&response%5Ftype=code%20id%5Ftoken&resource=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&scope=openid&nonce=222923BC76DF0071AA2458D421362B2B71E304FD8E3D4BDB%2D0FF1C4E3F092E61A9DC2FCAC4F0998EADF742901C727536437F4DAA6A06C5240&redirect%5Furi=https%3A%2F%2Fvvghr%2Esharepoint%2Ecom%2F%5Fforms%2Fdefault%2Easpx&state=OD0w&claims=%7B%22id%5Ftoken%22%3A%7B%22xms%5Fcc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&wsucxt=1&cobrandid=11bd8083%2D87e0%2D41b5%2Dbb78%2D0bc43c8a8e8a&client%2Drequest%2Did=4a3eaea0%2D80d3%2D6000%2D7b7b%2D9614d4ab5428&sso_reload=true" target="_blank">Raspored nastave</a></li>
+            <li><a href="../index.html" onclick="LogOut()">Odjavi se</a></li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+    </nav>
+    <div class="box">
+        <div class="slika">
+            <img src="../slike/logo.png">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="../Studenti/predmeti.html">Studenti</a>
+                </li>
+                <li><a href="../Administracija/predmeti.html">administracija</a></li>
+                <li><a href="../Obavijesti/obavijesti.html">obavijesti</a></li>
+                <li id="zadnji"><a href="../Postavke/osobni_podaci.html">postavke</a></li>
+            </ul>
+        </div>
+        <h1>Dobrodošli u UZG Pretinac</h1>
+        <div class="ploca">
+            <h2>oglasna ploča</h2>
+            <table>
+                <tr>
+                    <th colspan="2">Radno vrijeme studentske referade</th>
+                </tr>
+                <tr>
+                    <td>ponedjeljak</td>
+                    <td>08:00 - 16:00</td>
+                </tr>
+                <tr>
+                    <td>utorak</td>
+                    <td>11:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>srijeda</td>
+                    <td>08:00 - 16:00</td>
+                </tr>
+                <tr>
+                    <td>četvrtak</td>
+                    <td>11:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>petak</td>
+                    <td>08:00 - 16:00</td>
+                </tr>
+            </table>
+            <p>U periodu od 13.00 do 14.00 sati Studentska referada ne radi sa strankama</p>
+        </div>
+            <div class="select">
+                <label>Odaberite kategoriju:</label>
+                <select id="select">
+                    <option value="">Odaberite kategoriju</option>
+                    <option value="1">Održavanje računalnih sustava</option>
+                    <option value="2">Očna optika</option>
+                    <option value="3">Informacijski sustavi</option>
+                </select>
+            </div>
+            <div class="cont">
+                <h4>obavijesti</h4>
+                <div id="ORS">
+                    <div class="content">
+                        <h5>
+                            Elektrotehnika 2 - redovni studenti = 2. kolokvij + ispravak 1. kolokvija (petak 19.5.)
+                        </h5>
+                        <p>
+                            Poštovani studenti, otvorene su prijave za 2. kolokvij - Trofazni sustav + prijave za ispravak 1. kolokvija - Izmjenične struje.
+                        </p>
+                        <p>Prijave preko Pretinca su obavezne.</p>
+                        <p><b>
+                            Studenti koji ne prijave kolokvij putem Pretinca, neće mu moći pristupiti.
+                        </b></p>
+                        <p><b>
+                            Termin u 12:00h je za pisanje 2. kolokvija - Trofazni sustav.
+                        </p>
+                        <p>Termin u 13:00h je za pisanje ispravka 1. kolokvija - Izmjenične struje.</b></p>
+                        <p>Ukoliko imate kakvih pitanja, slobodno se javite.</p>
+                        <br>
+                        <p>Lp</p>
+                        <br>
+                        <br>
+                        <p><b>Unio:</b> Mato Bizar | 29.4.2023. 16:47</p>
+                        <p><b>Kategorija:</b> Održavanje računalnih sustava</p>
+                    </div>
+                    <div class="content">
+                        <h5>MATEMATIKA 2 ORS IZV MV OZR IZV REZULTATI</h5>
+                        <p>Poštovani</p>
+                        <br>
+                        <p>Bodovi su na pretincu.
+                        </p>
+                        <p>
+                            Uvid u subotu.
+                        </p>
+                        <br>
+                        <p>lp s.zlopasa</p>
+                        <br>
+                        <br>
+                        <p><b>Unio:</b> Šimun Zlopaša | 25.4.2023. 20:57</p>
+                        <p><b>Kategorija:</b> Održavanje računalnih sustava</p>
+                    </div>
+                    <div class="content">
+                        <h5>Predmet: "Projektiranje informacijskih sustava" - redovni studenti I KOLOKVIJ 4. travnja 2023. godine</h5>
+                        <p><b>I Kolokvij</b> iz predmeta: "Projektiranje informacijskih sustava", za sve <b>redovne studente</b></p>
+                        <p><b><u>održati će se 4. travnja 2023. godine u 13,45 sati u učionici TRC 099</b></u></p>
+                        <br>
+                        <br>
+                        <p><b>Unio:</b> Ivan Radošević | 29.3.2023. 11:49</p>
+                        <p><b>Kategorija:</b> Održavanje računalnih sustava</p>
+                    </div>
+                </div>
+                <div id="OO">
+                    <div class="content">
+                        <h5>Osnove farmakologije- promjena termina kolokvija</h5>
+                        <p>Na zahtjev predstavnika redovnih i izvanrednih
+                            studenata, prvi kolokvij iz predmeta Osnove farmakologije će se održati  <b>19.5.2023. s početkom u 16:15 u dvorani TRC099.
+                        </b></p>
+                        <br>
+                        <br>
+                        <p><b>Unio:</b> Josip Čulig | 27.4.2023. 14:32</p>
+                        <p><b>Kategorija:</b> Očna optika</p>
+                    </div>
+                    <div class="content">
+                        <h5>PRVI KOLOKVIJ IZ KOLEGIJA ERGONOMIJA GLEDANJA će se održati u petak, 28.04.2023., u dvorani G, redoviti studenti u 10h45, izvanredni studenti u 12h.</h5>
+                        <p>PRVI KOLOKVIJ IZ KOLEGIJA ERGONOMIJA GLEDANJA će se održati u petak, 28.04.2023., u dvorani G, redoviti studenti u 10h45, izvanredni studenti u 12h. </p>
+                        <p>Dr. sc. Ettore Tamajo, prof. struč. stud., dipl. ing.</p>
+                        <br>
+                        <br>
+                        <p><b>Unio:</b> Ettore Tamajo | 24.4.2023. 12:42</p>
+                        <p><b>Kategorija:</b> Očna optika</p>
+                    </div>
+                </div>
+                <div id="IS">
+                    <div class="content">
+                        <h5>Predmet Inovacije i nove tehnologije u IS: sljedeći tjedan nastava utorkom u učionici i termin predaje seminara</h5>
+                        <p>Predmet Inovacije i nove tehnologije u IS: sljedeći tjedan nastava utorkom u učionici i termin predaje seminara.</p>
+                        <br>
+                        <br>
+                        <p><b>Unio:</b> Davorin Valenčić | 26.4.2023. 18:15</p>
+                        <p><b>Kategorija:</b>  Informacijski sustavi</p>
+                    </div>
+                </div>
+            </div>
+        <footer>UZG Pretinac</footer>
+    </div>
+    <div id="preloader" class="preloader">
+        <div class="loader"></div>
+    </div>
+</body>
+</html>

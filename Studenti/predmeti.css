@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-image: url("../slike/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    display: block;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-image: inherit;
+	background-size: inherit;
+	background-position: inherit;
+    filter: brightness(30%);
+}
+
+nav {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    top: 0;
+    background: rgba(255, 255, 255, 0.11);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(5px); 
+    opacity: .98;
+    z-index: 2;
+}
+
+nav ul {
+    width: 100%;
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    padding: 1em;
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li a:hover {
+    opacity: .75;
+}
+
+nav .fa-bars {
+    display: none;
+    padding: 1em;
+    color: white;
+}
+
+.box {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    opacity: .95;
+}
+
+.box .slika {
+    background-color: rgb(0, 62, 126);
+    width: 100%;
+}
+
+.box .slika img {
+    display: table;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: .5em;
+}
+
+.box ul.nav2 {
+    list-style: none;
+    padding: 1em;
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 100%;
+}
+
+.box ul.nav2 li {
+    display: inline-block;
+}
+
+.box ul.nav2 li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    margin: 1em;
+}
+
+.box ul.nav2 li a:hover {
+   color: rgb(0, 62, 126);
+    
+}
+
+.box .side_menu {
+    position: absolute;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 300px;
+}
+
+.box .side_menu h4 {
+    padding: 1em;
+    background-color: rgb(0, 62, 126);
+    color: white;
+    text-transform: uppercase;
+}
+
+.box .side_menu a {
+    display: block;
+    padding-top: .5em;
+    padding-left: 1.5em;
+    padding-bottom: .5em;
+    padding-right: .35em;
+    border-bottom: 1px solid gainsboro;
+    text-decoration: none;
+    color: black;
+}
+
+.box .side_menu a:hover {
+    background-color: gainsboro;
+}
+
+.box .side_menu a:first-letter {
+    text-transform: capitalize;
+}
+
+.box .title {
+    width: 75%;
+    color: #E5E5E5;
+    margin-top: 1em;
+    margin-left: 88%;
+    transform: translate(-88%);
+    text-shadow: 2px 2px rgb(0, 62, 126);
+    text-transform: uppercase;
+}
+
+.title h1 {
+    text-align: center;
+    letter-spacing: .15em;
+}
+
+.box .cont {
+    width: 75%;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-top: 2em;
+    margin-left: 88%;
+    transform: translate(-88%);
+    margin-bottom: 2em;
+    border-radius: 1em;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+}
+
+.cont h4 {
+    padding: .5em;
+    background-color: rgb(0, 62, 126);
+    color: white;
+    border-radius: 1em 1em 0 0 ;
+}
+
+.box .cont .fa-download {
+    float: right;
+}
+
+.cont .content {
+    padding: .7em;
+    text-align: justify;
+    border-bottom: 2px solid gainsboro;
+}
+
+.cont .content h5 {
+    font-size: 1.1em;
+    padding-bottom: .5em;
+}
+
+.cont .content p {
+    padding-top: .25em;
+    line-height: 1.5em;
+}
+
+.cont .content table {
+    border-collapse: collapse;
+    color: black;
+    border: 1px solid lightgray;
+    text-align: center;
+    width: 100%;
+    margin-top: 1em;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.cont .content table th {
+    background-color: rgb(0, 62, 126);
+    color: white;
+}
+
+.cont .content table th, td {
+    border: 1px solid lightgray;
+    padding: 1em;
+}
+
+.cont .content table th:first-letter {
+    text-transform: capitalize;
+}
+
+.cont .content table td:first-letter {
+    text-transform: capitalize;
+}
+
+.cont #kraj {
+    margin-bottom: 2em;
+    border-bottom: none;
+}
+
+.box .cont a.down {
+    color: white;
+    text-decoration: none;
+}
+
+.cont a.file {
+    display: inline-block;
+    color: black;
+    margin-top: .5em;
+    text-decoration: none;
+}
+
+.cont a.file:hover {
+    opacity: .8;
+}
+
+.cont i.fa-file {
+    padding-right: .5em;
+}
+
+.tab {
+    width: 100%;
+}
+
+.mob_menu {
+    display: none;
+    position: absolute;
+    margin-left: -1em;
+    color: black;
+    font-size: 1em;
+}
+
+.mob_menu i {
+    border-radius: 50%;
+    border: 1px solid gainsboro;
+    padding: 1em;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: .3s ease-in-out;
+}
+
+.mob_menu i:hover {
+    box-shadow: 0px 2px 4px rgb(0, 62, 126);
+    background-color: aliceblue;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.mob_menu-hover {
+    background-color: aliceblue;
+}
+
+.box footer {
+    bottom: 0;
+    background-color: rgb(0, 62, 126);
+    width: 100%;
+    color: white;
+    padding: .5em;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+#preloader {
+    display: none;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.preloader .loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+@media screen and (max-width: 1450px) {
+    .box .mob_menu  {
+        display: block;
+        z-index: 3;
+    }
+
+    .box .side_menu {
+        display: none;
+        animation: slide-right;
+        z-index: 5;
+    }
+
+    .box .side_menu.active {
+        display: block;
+        animation: slide-left;
+        width: 280px;
+    }
+
+    @keyframes slide-right {
+        0% {
+            left: -280px;
+        }
+        
+        100% {
+            left: 0;
+        }
+    }
+
+    @keyframes slide-left {
+        0% {
+            left: 0;
+        }
+        
+        100% {
+            left: -280px;
+        }
+    }
+
+    .box .title {
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+
+    .box .cont {
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    nav .fa-bars {
+        display: flex;
+        position: absolute;
+        right: 0;
+        padding: .5em;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 0%;
+		flex-direction: column;
+		text-align: center;
+		margin-top: 2em;
+        background-color: rgb(0, 62, 126);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        animation: slide-down;
+    }
+
+    @keyframes slide-down {
+        0% {
+            top: -250px;
+        }
+
+        100% {
+            top: 0%;
+        }    
+    }
+
+    @keyframes slide-up {
+        0% {
+            top: 0%;
+        }
+
+        100% {
+            top: -250px;
+        }
+    }
+
+    nav ul.active {
+        display: flex;
+        animation: slide-up;
+    }
+
+    .fa-bars {
+        transition: transform .25s ease-in-out;
+    }
+
+    .fa-times {
+        transform: rotate(90deg);
+        transition: transform .25s ease-in-out;
+    }
+    
+    .slika img {
+        width: 70%;
+    }
+
+    .box ul.nav2 li {
+        display: block;
+        margin-top: 1em;
+        border-bottom: 1px solid gainsboro;
+        padding-bottom: 1em;
+    }
+
+    .box ul.nav2 li#zadnji {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .cont {
+        min-width: 100%;
+    }
+
+    .cont .content table {
+        font-size: .6em;
+    }
+
+    .box footer {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .box .mob_menu {
+        z-index: 80;
+        margin-left: -1em !important;
+    }
+
+    .box .side_menu {
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cont .content table {
+        font-size: .4em;
+    }
+}

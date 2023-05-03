@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <title>Studenti - Ispiti</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../slike/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="ispiti.css">
+    <script src="https:/cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="ispiti.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../Početna/home.html">Početna</a></li>
+            <li><a href="https://login.microsoftonline.com/3c77fccc-55b6-4a6d-8a1b-285ba160aa18/oauth2/authorize?client%5Fid=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&response%5Fmode=form%5Fpost&response%5Ftype=code%20id%5Ftoken&resource=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&scope=openid&nonce=222923BC76DF0071AA2458D421362B2B71E304FD8E3D4BDB%2D0FF1C4E3F092E61A9DC2FCAC4F0998EADF742901C727536437F4DAA6A06C5240&redirect%5Furi=https%3A%2F%2Fvvghr%2Esharepoint%2Ecom%2F%5Fforms%2Fdefault%2Easpx&state=OD0w&claims=%7B%22id%5Ftoken%22%3A%7B%22xms%5Fcc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&wsucxt=1&cobrandid=11bd8083%2D87e0%2D41b5%2Dbb78%2D0bc43c8a8e8a&client%2Drequest%2Did=4a3eaea0%2D80d3%2D6000%2D7b7b%2D9614d4ab5428&sso_reload=true" target="_blank">Raspored nastave</a></li>
+            <li><a href="../index.html" onclick="LogOut()">Odjavi se</a></li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+    </nav>
+    <div class="box" id="box">
+        <div class="slika">
+            <img src="../slike/logo.png" alt="logo">
+        </div>
+        <ul>
+            <li><a href="predmeti.html">predmeti</a></li>
+            <li><a href="ocjene.html">ocjene</a></li>
+            <li><a href="ispiti.html">ispiti</a></li>
+            <li><a href="upisi.html">upisi</a></li>
+            <li id="zadnji"><a href="diplomirali.html">diplomirali</a></li>
+        </ul>
+        <h1 id="h1_prijava">prijava</h1>
+        <div class="cont" id="cont_1">
+            <h3>web aplikacije
+                <span>2.2023.</span>
+            </h3>
+            <p><b>Godina predmeta:</b> 3. godina</p>
+            <p><b>Broj prijava:</b> 0</p>
+            <p><b>Broj prijava od zadnjeg upisa:</b> 0</p>
+            <button id="btn" onclick="Show()">Prikaži rokove</button>
+        </div>
+        <div class="cont" id="hidden">
+            <h3>Web aplikacije
+                <span>13.2.2023. 11:00</span>
+            </h3>
+            <p><b>Tip roka:</b> Ispit</p>
+            <p><b>Nastavnik:</b> Naslovni doc. dr. sc. Alen Šimec v. pred. dipl. ing.</p>
+            <p><b>Suradnik:</b></p>
+            <p><b>Zadnji datum prijave:</b> 10.2.2023. 23:59</p>
+            <p><b>Zadnji datum odjave:</b> 12.2.2023. 23:59</p>
+            <p><b>Grad:</b> Zagreb</p>
+            <p><b>Dvorana:</b> I_130</p>
+            <p><b>Napomena:</b></p>
+            <p><b>Rok je za:</b> Održavanje računalnih sustava (Redovni) - 2022./2023.</p>
+            <button id="btn2" onclick="showPopup()">Prijavi ispit</button>
+        </div>
+        <h1 id="h1_odjava" style="display: none;">odjava</h1>
+        <div class="cont" id="odjava">
+            <h3>web aplikacije
+                <span>13.2.2023. 11:00</span>
+            </h3>
+            <p><b>Tip roka:</b> Ispit</p>
+            <p><b>Vrijeme prijave:</b> 10.2.2023. 23:59</p>
+            <p><b>Vrijeme odjave:</b> 12.2.2023. 23:59</p>
+            <p><b>Grad:</b> Zagreb</p>
+            <p><b>Dvorana:</b> I_130</p>
+            <p><b>Napomena:</b></p>
+            <button onclick="Hide()">Odjavi ispit</button>
+        </div>
+        <h1>ispitni rokovi</h1>
+        <div class="cont">
+            <h3>napomena</h3>
+            <p>
+                Prijaviti se mogu ispiti i kolokviji samo ako je objavljen ispitni rok.
+            </p>
+            <p>
+                Uobičajno se ispit ili kolokviji treba prijaviti pet (5) dana prije termina ispitnog roka. Poslije tog roka nije moguće prijaviti ispit ili kolokvij.
+            </p>
+            <p>
+                Ispiti se mogu prijaviti ako je u Pretincu testiran semestar u kojem je predmet upisan.
+                Odjava ispita ili kolokvija može se obaviti najkasnije jedan (1) dan prije termina ispitnog roka.
+            </p>
+            <p>
+                Za sve poteškoće oko prijave ispita ili kolokvija treba poslati opis problema na modul Nastavna problematika.
+            </p>
+            <a href="#">Rokovi za moje nepoložene kolegije</a>
+            <a href="#table" onclick="Open()">Rokovi za sve upisane kolegije</a>
+            <table id="table">
+                <tr>
+                    <th></th>
+                    <th>datum roka</th>
+                    <th>vrijeme roka</th>
+                    <th>zadnji datum prijave</th>
+                    <th>zadnji datum odjave</th>
+                    <th>dvorana</th>
+                    <th>napomena</th>
+                </tr>
+                <tr>
+                    <td class="bold">Algoritmi i strukture podataka</td>
+                    <td>25.2.2023. (Ispit)</td>
+                    <td>14:00</td>
+                    <td>23.02.2023. 23:59</td>
+                    <td>24.02.2023. 23:59</td>
+                    <td>
+                        I_130 Zagrebačka cesta 5, Velika Gorica
+                    </td>
+                    <td>
+                        Održavanje računalnih sustava (Izvanredni) - 2021/2022
+                        Nastavnik: mr. sc. Josip Lopatič pred. dipl. ing.
+                        <br>
+                        Suradnik: -
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bold">Baze podataka</td>
+                    <td>16.2.2023. (Ispit)</td>
+                    <td>08:15</td>
+                    <td>14.02.2023. 23:59</td>
+                    <td>15.02.2023. 23:59</td>
+                    <td>IT3 Zagrebačka cesta 3, Velika Gorica</td>
+                    <td>Održavanje računalnih sustava (Redovni) - 2022/2023
+                        Nastavnik: Tomislav Gligora v. pred. struč. spec. ing. techn. inf.
+                        <br>
+                        Suradnik: Davor Lozić naslovni pred. struč. spec. ing. techn. inf.
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <footer>UZG Pretinac</footer>
+    </div>
+    <div id="preloader" class="preloader">
+        <div class="loader"></div>
+    </div>
+</body>
+</html>

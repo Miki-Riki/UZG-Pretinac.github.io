@@ -1,0 +1,313 @@
+
+<html
+    xmlns:o='urn:schemas-microsoft-com:office:office'
+    xmlns:w='urn:schemas-microsoft-com:office:word'
+    xmlns='http://www.w3.org/TR/REC-html40'>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<title>:: Izvedbeni plan ::</title>
+
+<style type="text/css">
+
+body
+{
+    margin: 3px;
+    font-family: Arial;
+    font-size: 10pt;
+}
+
+td
+{
+    font-size: 10pt;  
+}
+
+h2
+{
+	font-size: 12pt;
+}
+
+h3
+{
+	font-size: 10pt;
+}
+
+@page Section1{
+    size: 21cm 29.7cm;
+    margin: 2.5cm 2cm 2cm 2.5cm;
+    mso-footer:f1;
+}
+
+div.Section1 { page:Section1;}
+
+</style>
+
+</head><body>
+<div class="Section1">
+<table border="0" cellpadding="2" style="border-collapse: collapse;" bordercolor="#000000" width="100%">
+    <tr>
+        <td width="100%" height="70" align="center" style="border-bottom: 1px solid #000000">
+            <img src="http://pretinac.vvg.hr/img/vvg-logo-hr-eng.jpg" width="400" height="80" />
+        </td>
+    </tr>
+</table><br /><br />
+<p>
+	<b>STUDIJ: Održavanje računalnih sustava (ORS), Redovni</b><br />
+</p>
+<p align="center" style="font-size: 12pt;">
+	<b>IZVEDBENI PLAN NASTAVE PREDMETA</b><br />
+</p>
+<table border="1" cellpadding="4" style="border-collapse: collapse;" bordercolor="#000000" width="100%">
+	<tr>
+		<td width="20%"><b>Predmet:</b></td>
+		<td widht="80%" colspan="5">Elektrotehnika I (2+2+0), ORS1046, ECTS: 4</td>
+	</tr>
+
+
+<tr>
+		<td><b>Nositelj predmeta:</b></td>
+                        <td align="left" colspan="5">Mato Brizar pred. mag. ing. el.<br />
+                        </td>
+	</tr>
+	
+	<tr>
+		<td><b>Nastavnici i suradnici:</b></td>
+		<td align="left" colspan="5">Ivica Čulina naslovni asis. mag. ing. el. techn. inf.<br />
+                        </td>	</tr>
+	<tr>
+		<td><b>Semestar:</b> zimski</td>
+		<td>Sati pred.: 30</td>
+		<td>Sati vježbe: 30</td>
+		<td>Sati sem.: 0</td>
+		<td>Ukupno: 60</td>
+		<td>ECTS bodovi: 4</td>
+	</tr>		
+</table>
+<p>
+	<b>Vrijedi od 01.10.2020. za akademsku godinu 2020/2021</b><br />
+</p>
+<h2>1. Cilj predmeta:</h2>
+<p>
+	Stjecanje temeljnih znanja iz elektrostatike, strujnih krugova istosmjerne struje i stacionarnih magnetskih polja.<br />
+</p>
+<h2>2. Preduvjeti:</h2>
+<p>
+	<br />
+</p>
+<h2>3. Plan realizacije predmeta, sadržaj predavanja, vježbi i seminara:</h2>
+    <h3>Nastavnik Nenad Sikirica pred. mag. ing. el.:</h3> 
+    <p>
+        <table border="1" cellpadding="3" style="border-collapse: collapse;" bordercolor="#000000" width="100%">
+          <tr>
+            <td width="5%" height="20" align="center"><b>Rbr.</b></td>
+            <td width="45%" height="20" align="center"><b>Sadržaj</b></td>
+            <td width="10%" height="20" align="center"><b>Pred.</b></td>
+            <td width="10%" height="20" align="center"><b>Vj.</b></td>
+            <td width="10%" height="20" align="center"><b>Sem.</b></td>
+            
+          </tr>
+				<tr>
+					<td align="center">1.</td>
+					<td><b>UVOD U PREDMET</b><ul><li>Upoznavanje studenata s ciljevima kolegija i potrebnim predznanjima</li><li>Obveze studenata i način vrednovanja postignuća</li><li>Uvjeti prijave i polaganja ispita</li></ul><b>MEĐUNARODNI SUSTAV JEDINICA</b><ul><li>Osnovne jedinice SI sustava</li><li>Izvedene jedinice SI sustava</li><li>Jedinice SI sustava u elektrotehnici</li><li>Dopunske jedinice SI sustava</li><li>Decimalne jedinice SI sustava i preračunavanje</li></ul><b>ELEKTROSTATIKA</b><ul><li>Osnove elektriciteta i magnetizma</li></ul>
+					</td>
+					<td align="center">3</td>
+					<td align="center">1</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">2.</td>
+					<td><b>ELEKTROSTATIKA</b><ul><li>Svojstva i građa materije</li><li>Sile među nabojima</li><li>Coulombov zakon</li><li>Električno polje točkastog naboja</li><li>Gaussov zakon</li><li>Nastajanje električne struje</li></ul>
+					</td>
+					<td align="center">3</td>
+					<td align="center">1</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">3.</td>
+					<td><b>KONDENZATORI</b><ul><li>Električno polje ravnine</li><li>Pločasti kondenzator</li><li>Kapacitet pločastog kondenzatora</li><li>Polarizacija dielektrika</li><li>Električna influencija</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">2</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">4.</td>
+					<td><b>KONDENZATORI</b><ul><li>Osnovni spojevi kondenzatora</li><li>Rješavanje elektrostatskih mreža</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">2</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">5.</td>
+					<td><b>OSNOVNE FIZIKALNE VELIČINE STRUJNOG KRUGA</b><ul><li>Električni napon i elektromotorna sila</li><li>Izvori električnog napona</li><li>Jakost električne struje</li><li>Učinci električne struje</li><li>Električni otpor i električna vodljivost</li><li>Djelovanje el. struje na čovjeka</li><li>Mjere zaštite od električnog udara</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">2</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">6.</td>
+					<td><b>STRUJNI KRUGOVI ISTOSMJERNE STRUJE I NAPONA</b><ul><li>Osnovni spojevi otpora</li><li>Kirchhoffovi zakoni</li><li>Električne mreže istosmjerne struje i napona</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">2</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">7.</td>
+					<td><b>STRUJNI KRUGOVI ISTOSMJERNE STRUJE I NAPONA</b><ul><li>Metode rješavanja složenih električkih mreža</li></ul>
+					</td>
+					<td align="center">0</td>
+					<td align="center">4</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">8.</td>
+					<td><b>ENERGIJA I SNAGA ISTOSMJERNE STRUJE</b><ul><li>Energija istosmjerne struje</li><li>Snaga istosmjerne struje</li><li>Jouleov zakon</li><li>Teorem maksimalne snage</li><li>Korisnost</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">2</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">9.</td>
+					<td><b>MAGNETIZAM</b><ul><li>Sile između magnetskih polova</li><li>Magnetska indukcija</li><li>Jakost magnetskog polja</li><li>Materijali u magnetskom polju</li><li>Dijagram prvog magnetiziranja i krivulja histereze željeza i dinamo limova</li><li>Torusni svitak</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">2</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">10.</td>
+					<td><b>MAGNETIZAM</b><ul><li>Magnetski krug</li><li>Induktivitet</li><li>Sila (Lorentzova) u magnetskom polju na vodič kojim teče struja</li><li>Lenzov zakon</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">2</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">11.</td>
+					<td><b>ELEKTROMAGNETSKA INDUKCIJA</b><ul><li>Faradyev zakon elektromagnetske indukcije</li><li>Smjer induciranog napona</li><li>Samoindukcija</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">2</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">12.</td>
+					<td><b>ELEKTROMAGNETSKA INDUKCIJA</b><ul><li>Međuindukcija</li></ul><b>ISTOSMJERNI STROJEVI</b><ul><li>Princip rada istosmjernog motora</li></ul>
+					</td>
+					<td align="center">3</td>
+					<td align="center">1</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">13.</td>
+					<td><b>ISTOSMJERNI STROJEVI</b><ul><li>Princip rada generatora istosmjernog napona</li></ul>
+					</td>
+					<td align="center">3</td>
+					<td align="center">1</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">14.</td>
+					<td><b>MAGNETIZAM</b><ul><li>Magnetski krug</li><li>Induktivitet</li><li>Sila (Lorentzova) u magnetskom polju na vodič kojim teče struja</li><li>Lenzov zakon</li></ul>
+					</td>
+					<td align="center">0</td>
+					<td align="center">4</td>
+					<td align="center">0</td>
+					
+				</tr>
+				<tr>
+					<td align="center">15.</td>
+					<td><b>UVOD U PREDMET</b><ul><li>Uvjeti prijave i polaganja ispita</li></ul><b>STRUJNI KRUGOVI ISTOSMJERNE STRUJE I NAPONA</b><ul><li>Električne mreže istosmjerne struje i napona</li></ul><b>ENERGIJA I SNAGA ISTOSMJERNE STRUJE</b><ul><li>Energija istosmjerne struje</li><li>Snaga istosmjerne struje</li></ul><b>ELEKTROMAGNETSKA INDUKCIJA</b><ul><li>Samoindukcija</li><li>Međuindukcija</li></ul>
+					</td>
+					<td align="center">2</td>
+					<td align="center">2</td>
+					<td align="center">0</td>
+					
+				</tr>
+		  <tr>
+		  	<td colspan="2" align="right"><b>UKUPNO</b></td>
+		  	<td align="center"><b>30</b></td>
+		  	<td align="center"><b>30</b></td>
+		  	<td align="center"><b>0</b></td>
+		  </tr>
+		</table>
+	<br />
+	</p>
+    <h3>Nastavnik Marijana Srebrenović asis. dipl. ing.:</h3> 
+    <p>
+        <table border="1" cellpadding="3" style="border-collapse: collapse;" bordercolor="#000000" width="100%">
+          <tr>
+            <td width="5%" height="20" align="center"><b>Rbr.</b></td>
+            <td width="45%" height="20" align="center"><b>Sadržaj</b></td>
+            <td width="10%" height="20" align="center"><b>Pred.</b></td>
+            <td width="10%" height="20" align="center"><b>Vj.</b></td>
+            <td width="10%" height="20" align="center"><b>Sem.</b></td>
+            
+          </tr>
+		  <tr>
+		  	<td colspan="2" align="right"><b>UKUPNO</b></td>
+		  	<td align="center"><b>0</b></td>
+		  	<td align="center"><b>0</b></td>
+		  	<td align="center"><b>0</b></td>
+		  </tr>
+		</table>
+	<br />
+	</p>
+<h2>4. Obveze studenata i način polaganja ispita:</h2>
+<p>
+	Studenti su obavezni prisustvovati predavanjima i vježbama.<br />
+Obavezni su pisati kratke testove, domaće i školske zadaće kao i kolokvije.<br />
+Obavezni su da samostalno kod kuće ponavljaju prijeđeno gradivo i uvježbavaju rješavanje zadataka.<br />
+Tijekom semestra studenti iz svih aktivnosti sakupljaju bodove. Student koji sakupi manje od 18,75 bodova nije s uspjehom završio pohađanje predmeta i mora ga ponovno upisati.<br />
+Za pozitivnu ocjenu iz predmeta potrebno je da i pismeni i usmeni dio ispita budu pozitivno ocijenjeni, da student prisustvuje na minimalno pet termina predavanja ili vježbi, da iz svakog kolokvija ima minimalno 12 bodova, te da se iz laboratorijskih vježbi sakupi minimalno 5 bodova.<br />
+Studenti koji sakupe između 18,75 i 37,5 bodova trebaju pristupiti pismenom i usmenom ispitu. Ako time sakupe ukupno 37,5 bodova mogu pristupiti završnom ispitu.<br />
+Studenti koji sakupe više od 37,5 bodova pristupaju direktno na završni ispit.<br />
+<br />
+<br />
+</p>
+<h2>5. Literatura:</h2>
+<p>
+	<b>Obvezna literatura:</b><br />
+	1. Kozlina, Ž., Osnove elektrotehnike, VVG, Velika Gorica, 2013. <br />
+2. Pinter, V., Osnove elektrotehnike I dio, Tehnička knjiga, Zagreb, 1994.<br />
+3. Šehović, E.; Tkalić, M. & Felja, I.: Osnove elektrotehnike - zbirka primjera (prvi dio), Školska knjiga, Zagreb, 1984. <br /><br />
+	
+	<b>Preporučena literatura:</b><br />
+	1. Lončar, J., Osnove elektrotehnike I, Tehnička knjiga, Zagreb 1956.<br />
+2. Jajac, B., Teorijske osnove elektrotehnike I, Graphis, Zagreb 1998.<br />
+3. Jajac, B., Teorijske osnove elektrotehnike II, Graphis, Zagreb 2002.<br />
+4. Maksimovič, Zadaci iz osnova elektrotehnike I, Sveučilište u Zagrebu, skripta, 1971. 
+</p>
+<h2>6. Metode izvedbe predmeta:</h2>
+<p>
+	Predavanja i vježbe obavljaju se usmenim izlaganjem nastavnika uz korištenje projekcije slajdova iz PowerPoin prezentacija. Po potrebi se nadopunjuju (ili daju dodatna objašnjenja) korištenjem bijele ploče i flomastera. Laboratorijske vježbe se izvode na računalu upotrebom EWB 5.12 ili više.<br />
+Na predavanjima i vježbama se tijekom semestra rješavaju dvije školske zadaće (teorija i zadatak) i pišu dva kolokvija. Kod teoretskih pitanja od studenata se traži da je odgovor napisan kao ispravna i potpuna rečenica, tj. da je odgovor informacija sam po sebi a bez čitanja pitanja. Zadatak treba biti točno riješen tj. odabrana najpovoljnija jednadžba, točno uvrštene zadane vrijednosti, izračunat rezultat uz napisanu mjernu jedinicu i taj rezultat treba biti ispravno tehnički prikazan (sa korištenjem prefiksa). Ako je potrebno treba biti i tekstom napisan traženi odgovor.<br />
+<br />
+</p>
+<h2>7. Komunikacija sa studentima:</h2>
+<p>
+	Prije svakog predavanja i nakon svakog predavanja kao i pod pauzama stojim na raspolaganju studentima.<br />
+Izvan tog vremena stojim im na raspolaganju putem elektroničke pošte sa adresom "sikirica01@gmail.com". <br />
+Putem e-pošte mogu se dogovoriti po potrebi fizički susreti izvan navedenog vremena.<br />
+<br />
+</p>
+</div>
+</body>
+</html>

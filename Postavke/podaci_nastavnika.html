@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <title>Postavke - Podaci nastavnika</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../slike/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="podaci_nastavnika.css">
+    <script src="podaci_nastavnika.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../Početna/home.html">Početna</a></li>
+            <li><a href="https://login.microsoftonline.com/3c77fccc-55b6-4a6d-8a1b-285ba160aa18/oauth2/authorize?client%5Fid=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&response%5Fmode=form%5Fpost&response%5Ftype=code%20id%5Ftoken&resource=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&scope=openid&nonce=222923BC76DF0071AA2458D421362B2B71E304FD8E3D4BDB%2D0FF1C4E3F092E61A9DC2FCAC4F0998EADF742901C727536437F4DAA6A06C5240&redirect%5Furi=https%3A%2F%2Fvvghr%2Esharepoint%2Ecom%2F%5Fforms%2Fdefault%2Easpx&state=OD0w&claims=%7B%22id%5Ftoken%22%3A%7B%22xms%5Fcc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&wsucxt=1&cobrandid=11bd8083%2D87e0%2D41b5%2Dbb78%2D0bc43c8a8e8a&client%2Drequest%2Did=4a3eaea0%2D80d3%2D6000%2D7b7b%2D9614d4ab5428&sso_reload=true" target="_blank">Raspored nastave</a></li>
+            <li><a href="../index.html" onclick="LogOut()">Odjavi se</a></li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+    </nav>
+    <div class="box">
+        <div class="slika">
+            <img src="../slike/logo.png">
+        </div>
+        <ul>
+            <li><a href="osobni_podaci.html">osobni podaci</a></li>
+            <li id="zadnji"><a href="podaci_nastavnika.html">podaci nastavnika</a></li>
+        </ul>
+        <h1>podaci nastavnika</h1>
+        <div class="cont">
+            <div class="card">
+                <h3>Davor Lozić</h3>
+                <img src="../slike/user.png">
+                <p>naslovni pred. struč. spec. ing. techn. inf.</p>
+                <a href="#info" onclick="Open('info')">Detalji</a>
+            </div>
+            <div class="card">
+                <h3>alen šimec</h3>
+                <img src="../slike/user.png">
+                <p>naslovni doc. dr. sc. v. pred. dipl. ing.</p>
+                <a href="#info2" onclick="Open('info2')">Detalji</a>
+            </div>
+            <div class="card">
+                <h3>vladimir bralić</h3>
+                <img src="../slike/user.png">
+                <p>pred. mag. inf.</p>
+                <a href="#info3" onclick="Open('info3')">Detalji</a>
+            </div>
+            <div class="card">
+                <h3>bruno valić</h3>
+                <img src="../slike/user.png">
+                <p> v. pred. struč. spec. ing. techn. inf.</p>
+                <a href="#info4" onclick="Open('info4')">Detalji</a>
+            </div>
+            <div class="card">
+                <h3>hatzivelkos aleksandar</h3>
+                <img src="../slike/user.png">
+                <p>v. pred. dipl. ing.</p>
+                <a href="#info5" onclick="Open('info5')">Detalji</a>
+            </div>
+
+            <div class="cont2" id="info">
+                <table>
+                    <tr>
+                        <th>tip titule</th>
+                        <th>titula</th>
+                        <th>kratica</th>
+                    </tr>
+                    <tr>
+                        <td>Naslovni nastavnik</td>
+                        <td>naslovni predavač</td>
+                        <td>naslovni pred.</td>
+                    </tr>
+                    <tr>
+                        <td>Stručni / Akademski naziv</td>
+                        <td>stručni specijalist inženjer informacijskih tehnologija</td>
+                        <td>struč. spec. ing. techn. inf.</td>
+                    </tr>
+                </table>
+                <h4>Predmeti</h4>
+                <ol>
+                    <li><b>Baze podataka</b> (3 + 2), ORS114, ECTS: 6
+                    </li>
+                    <li><b>Baze podataka u Internetskom okruženju</b> (2 + 2), IS120, ECTS: 5
+                    </li>
+                    <li><b>Operacijski sustavi II</b> (2 + 2), ORS115, ECTS: 6
+                    </li>
+                    <li><b>Programiranje baze podataka</b> (2 + 2), ORS136, ECTS: 4
+                    </li>
+                    <li><b>Seminarski rad</b> (1 + 0), IS150, ECTS: 5
+                    </li>
+                    <li><b>Sustavi za potporu u odlučivanju</b> (2 + 2), IS290, ECTS: 5
+                    </li>
+                </ol>
+                <p>Kontakt: <a href="mailto:dlozic@uzg.hr">dlozic@uzg.hr</a></p>
+            </div>
+
+
+            <div class="cont2" id="info2">
+                <table>
+                    <tr>
+                        <th>tip titule</th>
+                        <th>titula</th>
+                        <th>kratica</th>
+                    </tr>
+                    <tr>
+                        <td>Akademski stupanj</td>
+                        <td>doktor znanosti</td>
+                        <td>dr. sc.</td>
+                    </tr>
+                    <tr>
+                        <td>Izborno zvanje - nastavno zvanje</td>
+                        <td>viši predavač</td>
+                        <td>v. pred.</td>
+                    </tr>
+                    <tr>
+                        <td>Naslovni znanstveni nastavnik</td>
+                        <td>naslovni docent</td>
+                        <td>naslovni doc.</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Stručni / Akademski naziv</td>
+                        <td>diplomirani inženjer sigurnosti</td>
+                        <td>dipl. ing.</td>
+                    </tr>
+                </table>
+                <h4>Predmeti</h4>
+                <ol>
+                    <li><b>Napredno web programiranje</b> (1 + 3), IS170, ECTS: 5</li>
+                    <li><b>	PHP web-programiranje</b> (1 + 3), IS180, ECTS: 5</li>
+                    <li><b>Seminarski rad</b> (1 + 0), IS150, ECTS: 5</li>
+                    <li><b>	Web aplikacije</b> (2 + 1), ORS135, ECTS: 4</li>
+                </ol>
+                <p>Kontakt: <a href="mailto:asimec@uzg.hr">asimec@uzg.hr</a></p>
+            </div>
+
+            <div class="cont2" id="info3">
+                <table>
+                    <tr>
+                        <th>tip titule</th>
+                        <th>titula</th>
+                        <th>kratica</th>
+                    </tr>
+                    <tr>
+                        <td>Akademski stupanj</td>
+                        <td>doktor znanosti</td>
+                        <td>dr. sc.</td>
+                    </tr>
+                    <tr>
+                        <td>Nastavno radno mjesto</td>
+                        <td>radno mjesto predavač</td>
+                        <td>pred.</td>
+                    </tr>
+                    <tr>
+                        <td>Stručni / Akademski naziv</td>
+                        <td>magistar informacijskih znanosti</td>
+                        <td>marg. inf.</td>
+                    </tr>
+                </table>
+                <h4>Predmeti</h4>
+                <ol>
+                    <li><b>Algoritmi i strukture podataka</b> (2 + 3), ORS109, ECTS: 5</li>
+                    <li><b>Programiranje</b> (2 + 3), ORS105, ECTS: 6</li>
+                    <li><b>	Programski jezik C</b> (2 + 2), ORS139, ECTS: 4</li>
+                    <li><b>Seminarski rad</b> (1 + 0), IS150, ECTS: 5</li>
+                </ol>
+                <p>Kontakt: <a href="mailto:vbralic@uzg.hr">vbralic@uzg.hr</a></p>
+            </div>
+
+            <div class="cont2" id="info4">
+                <table>
+                    <tr>
+                        <th>tip titule</th>
+                        <th>titula</th>
+                        <th>kratica</th>
+                    </tr>
+                    <tr>
+                        <td>Nastavno radno mjesto</td>
+                        <td>radno mjesto viši predavač</td>
+                        <td>v. pred.</td>
+                    </tr>
+                    <tr>
+                        <td>Stručni / Akademski naziv</td>
+                        <td>magistar inženjer informacijskih tehnologija</td>
+                        <td>mag. ing. techn. inf.</td>
+                    </tr>
+                </table>
+                <h4>Predmeti</h4>
+                <ol>
+                   <li><b>Internet infrastruktura</b> (2 + 1), ORS133, ECTS: 4</li>
+                    <li><b>Računalne mreže</b> (2 + 2), ORS120, ECTS: 5</li>
+                    <li><b>Sigurnost informacijskih sustava</b> (2 + 2), ORS127, ECTS: 3</li>
+                </ol>
+                <p>Kontakt: <a href="mailto:bvalic@uzg.hr">bvalic@uzg.hr</a></p>
+            </div>
+
+            <div class="cont2" id="info5">
+                <table>
+                    <tr>
+                        <th>tip titule</th>
+                        <th>titula</th>
+                        <th>kratica</th>
+                    </tr>
+                    <tr>
+                        <td>Nastavno radno mjesto</td>
+                        <td>radno mjesto viši predavač</td>
+                        <td>v. pred.</td>
+                    </tr>
+                    <tr>
+                        <td>Stručni / Akademski naziv</td>
+                        <td>diplomirani inženjer</td>
+                       <td>dipl. ing.</td>
+                    </tr>
+                </table>
+                <h4>Predmeti</h4>
+                <ol>
+                    <li><b>Matematika</b> (2 + 2), ZAJ105, ECTS: 5</li>
+                    <li><b>Matematika 1</b> (2 + 2), ZAJ101, ECTS: 5</li>
+                    <li><b>Matematika 2</b> (2 + 2), ZAJ108, ECTS: 4</li>
+                    <li><b>	Matematika 3</b> (2 + 1), ORS113, ECTS: 4</li>
+                    <li><b>	Simbolička logika</b> (2 + 2), ORS107, ECTS: 5</li>
+                </ol>
+                <p>Kontakt: <a href="mailto:a.hatzivelkos@uzg.hr">a.hatzivelkos@uzg.hr</a></p>
+            </div>
+        </div>
+        <footer>UZG Pretinac</footer>
+    </div>
+    <div id="preloader" class="preloader">
+        <div class="loader"></div>
+    </div>
+</body>
+</html>

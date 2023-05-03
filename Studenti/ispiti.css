@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-image: url("../slike/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    display: block;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-image: inherit;
+	background-size: inherit;
+	background-position: inherit;
+    filter: brightness(30%);
+}
+
+nav {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    top: 0;
+    background: rgba(255, 255, 255, 0.11);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(5px); 
+    opacity: .98;
+    z-index: 2;
+}
+
+nav ul {
+    width: 100%;
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    padding: 1em;
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li a:hover {
+    opacity: .75;
+}
+
+nav .fa-bars {
+    display: none;
+    padding: 1em;
+    color: white;
+}
+
+.box {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 5%;
+    width: 100%;
+    min-height: 100%;
+    background-color: white;
+    opacity: .95;
+}
+
+.box .slika {
+    background-color: rgb(0, 62, 126);
+    width: 100%;
+}
+
+.box .slika img {
+    display: table;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: .5em;
+}
+
+.box ul {
+    list-style: none;
+    padding: 1em;
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 100%;
+}
+
+.box ul li {
+    display: inline-block;
+}
+
+.box ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    margin: 1em;
+}
+
+.box ul li a:hover {
+   color: rgb(0, 62, 126);
+    
+}
+
+.box h1 {
+    color: #E5E5E5;
+    margin-top: 1em;
+    text-align: center;
+    text-shadow: 2px 2px rgb(0, 62, 126);
+    text-transform: uppercase;
+    letter-spacing: .15em;
+}
+
+.box .cont {
+    width: 75%;
+    margin-top: 2em;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 2em;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 1em;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.cont h3 {
+    padding: .5em;
+    background-color: rgb(0, 62, 126);
+    color: white;
+    border-radius: 1em 1em 0 0 ;
+    text-align: left;
+}
+
+.cont h3:first-letter {
+    text-transform: capitalize;
+}
+
+.cont h3 span {
+    float: right;
+}
+
+.cont p {
+    margin-top: .5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.cont button#btn {
+    position: absolute;
+    right: 0;
+    margin-right: 1em;
+    top: 55%;
+    padding: .25em;
+    outline: none;
+    box-shadow: rgb(0, 62, 126) 0px 1px 3px;
+    border-radius: .5em;
+    border: 0;
+    transition: all .2s ease-in-out;
+}
+
+.cont #btn:hover {
+    cursor: pointer;
+    box-shadow: rgb(0, 62, 126) 0px 1px 6px;
+    transition: all .2s ease-in-out;
+}
+
+#hidden {
+    display: none;
+    padding-bottom: 2.5em;
+}
+
+#hidden button {
+    position: absolute;
+    right: 0;
+    margin-right: 1em;
+    margin-top: .5em;
+    padding: .25em;
+    border-radius: .5em;
+    outline: none;
+    border: 0;
+    box-shadow: rgb(0, 62, 126) 0px 1px 3px;
+    transition: all .2s ease-in-out;
+}
+
+#hidden button:hover {
+    cursor: pointer;
+    box-shadow: rgb(0, 62, 126) 0px 1px 6px;
+    transition: all .2s ease-in-out;
+}
+
+@keyframes show {
+    0% {
+        opacity: .25;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+#odjava {
+    display: none;
+    padding-bottom: 2.5em;
+}
+
+#odjava button {
+    position: absolute;
+    right: 0;
+    margin-right: 1em;
+    margin-top: .5em;
+    padding: .25em;
+    border-radius: .5em;
+    outline: none;
+    border: 0;
+    box-shadow: rgb(0, 62, 126) 0px 1px 3px;
+    transition: all .2s ease-in-out;
+}
+
+#odjava button:hover {
+    cursor: pointer;
+    box-shadow: rgb(0, 62, 126) 0px 1px 6px;
+    transition: all .2s ease-in-out;
+}
+
+.cont a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 62, 126);
+    margin-top: 2em;
+    margin-right: .5em;
+    text-align: center;
+}
+
+.cont a:hover {
+    text-decoration: underline;
+}
+
+.cont table {
+    display: none;
+    border-collapse: collapse;
+    border: 1px solid lightgray;
+    width: 80%;
+    margin-top: 1em;
+    margin-left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+table th, td, tr {
+    border: 1px solid lightgray;
+    padding: .5em;
+}
+
+table th {
+    background-color: rgb(0, 62, 126);
+    color: white;
+    text-transform: uppercase;
+}
+
+table td.bold {
+    font-weight: bold;
+}
+ 
+.box footer {
+    margin-top: auto;
+    background-color: rgb(0, 62, 126);
+    width: 100%;
+    color: white;
+    padding: .5em;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+#preloader {
+    display: none;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.preloader .loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+@media screen and (max-width: 1000px) {
+   .cont table {
+        font-size: .8em;
+    }   
+}
+
+@media screen and (max-width: 768px) {
+    nav .fa-bars {
+        display: flex;
+        position: absolute;
+        right: 0;
+        padding: .5em;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 0%;
+		flex-direction: column;
+		text-align: center;
+		margin-top: 2em;
+        background-color: rgb(0, 62, 126);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        animation: slide-down;
+    }
+
+    @keyframes slide-down {
+        0% {
+            top: -250px;
+        }
+
+        100% {
+            top: 0%;
+        }    
+    }
+
+    @keyframes slide-up {
+        0% {
+            top: 0%;
+        }
+
+        100% {
+            top: -250px;
+        }
+    }
+
+    nav ul.active {
+        display: flex;
+        animation: slide-up;
+    }
+
+    .fa-bars {
+        transition: transform .25s ease-in-out;
+    }
+
+    .fa-times {
+        transform: rotate(90deg);
+        transition: transform .25s ease-in-out;
+    }
+    
+    .slika img {
+        width: 80%;
+    }
+
+    .box ul li {
+        display: block;
+        margin-top: 1em;
+        border-bottom: 1px solid gainsboro;
+        padding-bottom: 1em;
+    }
+
+    .box ul li#zadnji {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    #cont_1 {
+        padding-bottom: 2.5em;
+    }
+
+    #cont_1 #btn {
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 3.5em;
+        width: 30%;
+    }
+    
+    .cont a {
+        display: block;
+        margin: .5em;
+    } 
+    
+    .cont table {
+        font-size: .5em;
+    }
+
+    .box footer {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .box h1 {
+        font-size: 1.7em;
+    }
+    
+    .cont {
+        min-width: 100%;
+    }
+
+    #odjava h3 {
+        text-align: center;
+        padding-bottom: 1.8em;
+        font-size: 1em;
+    }
+
+    #odjava h3 span {
+        display: block;
+        position: absolute;
+        margin-left: 48%;
+        transform: translate(-50%);
+        padding-bottom: 1em;
+        padding-top: .25em; 
+    }
+
+    #odjava button {
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: .5em;
+        width: 30%;
+    }
+    
+    .cont table {
+        font-size: .1em;
+    }  
+}
+
+@media  screen and (max-width: 350px) {
+    #cont_1 {
+        padding-bottom: 4em;
+    }
+    
+    #cont_1 #btn {
+        min-width: 40%;
+        margin-top: 4em;
+    }   
+}

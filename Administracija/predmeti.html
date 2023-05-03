@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <title>Administracija - Predmeti</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../slike/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="predmeti.css">
+    <script src="predmeti.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../Početna/home.html">Početna</a></li>
+            <li><a href="https://login.microsoftonline.com/3c77fccc-55b6-4a6d-8a1b-285ba160aa18/oauth2/authorize?client%5Fid=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&response%5Fmode=form%5Fpost&response%5Ftype=code%20id%5Ftoken&resource=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&scope=openid&nonce=222923BC76DF0071AA2458D421362B2B71E304FD8E3D4BDB%2D0FF1C4E3F092E61A9DC2FCAC4F0998EADF742901C727536437F4DAA6A06C5240&redirect%5Furi=https%3A%2F%2Fvvghr%2Esharepoint%2Ecom%2F%5Fforms%2Fdefault%2Easpx&state=OD0w&claims=%7B%22id%5Ftoken%22%3A%7B%22xms%5Fcc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&wsucxt=1&cobrandid=11bd8083%2D87e0%2D41b5%2Dbb78%2D0bc43c8a8e8a&client%2Drequest%2Did=4a3eaea0%2D80d3%2D6000%2D7b7b%2D9614d4ab5428&sso_reload=true" target="_blank">Raspored nastave</a></li>
+            <li><a href="../index.html" onclick="LogOut()">Odjavi se</a></li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+    </nav>
+    <div class="box">
+        <div class="slika">
+            <img src="../slike/logo.png">
+        </div>
+        <ul>
+            <li><a href="predmeti.html">predmeti</a></li>
+            <li><a href="dvorane.html">dvorane i raspored nastave</a></li>
+            <li id="zadnji"><a href="ishodi_studija.html">ishodi studija</a></li>
+        </ul>
+        <h1>predmeti</h1>
+        <h3>PREGLED I ADMINISTRIRANJE PREDMETA</h3>
+        <div id="btn">
+            <a href="predmeti_i_godine.html"><button>Predmeti i godine</button></a>
+        </div>
+        <div class="cont">
+            <label>Akademska godina:</label>
+            <select id="godine">
+                <option value="">Odaberite godinu</option>
+                <option value="1">2022./2023.</option>
+                <option value="2">2021./2022.</option>
+                <option value="3">2020./2021.</option>
+                <option value="4">2019./2020.</option>
+            </select>
+            <label id="sem">Semestar:</label>
+            <select id="semestar">
+                <option value="" id="main">Odaberite</option>
+                <option value="zimski" id="show" style="display: none;">Zimski semestar</option>
+                <option value="ljetni" id="show2" style="display: none;">Ljetni semestar</option>
+            </select>
+        </div>
+        <table id="Data">
+            <tr>
+                <th>id</th>
+                <th>šifra</th>
+                <th>predmet</th>
+                <th>nastavnici</th>
+                <th>ects</th>
+                <th>br. sati pred.</th>
+                <th>br. sati vježbi</th>
+                <th>br. sati seminara</th>
+                <th>semestar</th>
+                
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ORS109</td>
+                <td>Algoritmi i strukture podataka
+                    <br>
+                    Algorithms and Data Structures
+                </td>
+                <td>Vladimir Bralić pred. mag. inf. (Nositelj)
+                    <br>
+                    mr. sc. Josip Lopatič pred. dipl. ing. (Nositelj)
+                </td>
+                <td>5</td>
+                <td>2</td>
+                <td>3</td>
+                <td>0</td>
+                <td>ljetni</td>
+            </tr>
+            <tr>
+                <td>355</td>
+                <td>IS310</td>
+                <td>Analiza i dizajniranje informacijskih sustava
+                    <br>
+                    Analysis and Design of Information Systems
+                </td>
+                <td>naslovni prof. dr. sc. Željko Dobrović
+                    prof. v. š. dipl. ing. (Nositelj)
+                </td>
+                <td>5</td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td>zimski</td>
+            </tr>
+            <tr>
+                <td>368</td>
+                <td>IS475</td>
+                <td>Web aplikacije u Javi
+                </td>
+                <td>dr. sc. Aleksander Radovan naslovni prof. struč. stud. dipl. ing. (Nositelj)
+                </td>
+                <td>5</td>
+                <td>1</td>
+                <td>3</td>
+                <td>0</td>
+                <td>ljetni</td>
+            </tr>
+            <tr>
+                <td>334</td>
+                <td>IS190	</td>
+                <td>ASP web-programiranje
+                    <br>
+                    ASP Web Programming
+                </td>
+                <td>mr. sc. Josip Lopatič pred. dipl. ing. (Nositelj)
+                    <br>
+                    Alen Adanić mag. oec.
+                </td>
+                <td>5</td>
+                <td>1</td>
+                <td>3</td>
+                <td>0</td>
+                <td>zimski</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>ZAJ1046</td>
+                <td>Elektrotehnika 1
+                    <br>
+                    Electrical Engineering 1
+                </td>
+                <td>Andrija Šaban pred. mag. ing. mech. (Nositelj)
+                    <br>
+                    Nenad Sikirica pred. mag. ing. el.
+                </td>
+                <td>4</td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td>zimski</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>OMV105</td>
+                <td>Engleski jezik 1
+                    <br>
+                    English 1
+                </td>
+                <td>mr. sc. Jadranka Majić naslovni pred. prof. (Nositelj)
+                    <br>
+                    dr. sc. Ivana Rubić v. pred. mag. educ. philol. angl.
+                </td>
+                <td>2</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>zimski</td>
+            </tr>
+            <tr>
+                <td>569</td>
+                <td>OPT102</td>
+                <td>Fizika 
+                    <br>
+                    Physics
+                </td>
+                <td>dr. sc. Ettore Tamajo v. pred. dipl. ing. (Nositelj)
+                    <br>
+                    Ljiljana Ivanković asis. mag. phys.-geophys
+                </td>
+                <td>4</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                <td>zimski</td>
+            </tr>
+        </table>
+        <footer>UZG Pretinac</footer>
+    </div>
+    <div id="preloader" class="preloader">
+        <div class="loader"></div>
+    </div>
+</body>
+</html>

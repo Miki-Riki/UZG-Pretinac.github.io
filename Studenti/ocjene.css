@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-image: url("../slike/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    display: block;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-image: inherit;
+	background-size: inherit;
+	background-position: inherit;
+    filter: brightness(30%);
+}
+
+nav {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    top: 0;
+    background: rgba(255, 255, 255, 0.11);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(5px); 
+    opacity: .98;
+    z-index: 2;
+}
+
+nav ul {
+    width: 100%;
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    padding: 1em;
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li a:hover {
+    opacity: .75;
+}
+
+nav .fa-bars {
+    display: none;
+    padding: 1em;
+    color: white;
+}
+
+.box {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 5%;
+    width: 100%;
+    min-height: 100%;
+    background-color: white;
+    opacity: .95;
+}
+
+.box .slika {
+    background-color: rgb(0, 62, 126);
+    width: 100%;
+}
+
+.box .slika img {
+    display: table;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: .5em;
+}
+
+.box ul {
+    list-style: none;
+    padding: 1em;
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 100%;
+}
+
+.box ul li {
+    display: inline-block;
+}
+
+.box ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    margin: 1em;
+}
+
+.box ul li a:hover {
+   color: rgb(0, 62, 126);
+    
+}
+
+.box h1 {
+    color: #E5E5E5;
+    margin-top: 1em;
+    text-align: center;
+    text-shadow: 2px 2px rgb(0, 62, 126);
+    text-transform: uppercase;
+    letter-spacing: .15em;
+}
+
+.box .cont {
+    width: 75%;
+    margin-top: 2em;
+    margin-left: 50%;
+    transform: translate(-50%);
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 1em;
+    border: 1px solid gainsboro;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+}
+
+.cont select {
+    display: flex;
+    margin: 1em;
+    padding: .5em;
+    outline: none;
+    border: 0;
+    box-shadow: rgb(0, 62, 126) 0px 1px 8px;
+    border-radius: 2em;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.cont table {
+    width: 95%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 2em;
+}
+
+.cont #tables {
+    display: none;
+}
+
+.cont #main_table {
+    display: table;
+}
+
+.cont table, th, td {
+    border-collapse: collapse;
+    border: 1px solid lightgray;
+    padding: 1em;
+    text-align: center;
+}
+
+.cont table th {
+    background-color: rgb(0, 62, 126);
+    color: white;
+    text-transform: uppercase;
+}
+
+.cont table td:first-letter {
+    text-transform: capitalize;
+}
+
+.cont table.table_2 {
+    margin-top: 2em;
+    outline: none;
+}
+
+.cont #table_2 {
+    display: none;
+}
+
+.cont h3 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.box footer {
+    margin-top: auto;
+    background-color: rgb(0, 62, 126);
+    width: 100%;
+    color: white;
+    padding: .5em;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+#preloader {
+    display: none;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.preloader .loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+@media screen and (max-width: 850px) {
+    .cont table {
+        font-size: .7em;
+    } 
+}
+
+@media screen and (max-width: 768px) {
+    nav .fa-bars {
+        display: flex;
+        position: absolute;
+        right: 0;
+        padding: .5em;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 0%;
+		flex-direction: column;
+		text-align: center;
+		margin-top: 2em;
+        background-color: rgb(0, 62, 126);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        animation: slide-down;
+    }
+
+    @keyframes slide-down {
+        0% {
+            top: -250px;
+        }
+
+        100% {
+            top: 0%;
+        }    
+    }
+
+    @keyframes slide-up {
+        0% {
+            top: 0%;
+        }
+
+        100% {
+            top: -250px;
+        }
+    }
+
+    nav ul.active {
+        display: flex;
+        animation: slide-up;
+    }
+
+    .fa-bars {
+        transition: transform .25s ease-in-out;
+    }
+
+    .fa-times {
+        transform: rotate(90deg);
+        transition: transform .25s ease-in-out;
+    }
+    
+    .slika img {
+        width: 70%;
+    }
+
+    .box ul li {
+        display: block;
+        margin-top: 1em;
+        border-bottom: 1px solid gainsboro;
+        padding-bottom: 1em;
+    }
+
+    .box ul li#zadnji {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    select {
+       font-size: .5em;
+    }
+    
+    .cont table {
+        font-size: .6em;
+    }
+
+    .box footer {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .cont {
+        min-width: 100%;
+    }
+    
+    .cont select {
+        box-shadow: rgb(0, 62, 126) 0px .5px 4px;
+    }
+    
+    .cont table {
+        font-size: .3em;
+    }
+
+    .cont h3 {
+        font-size: .7em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .cont table {
+        font-size: .15em;
+    }
+}
+
